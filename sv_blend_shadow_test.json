@@ -35,8 +35,8 @@
   "objects": [
     {
       "name": "Floor",
-      "model": "assets/models/cube.obj",
-      "texture": "assets/textures/checkerboard.png",
+      "model": "Assets/models/cube.obj",
+      "texture": "Assets/textures/checkerboard.png",
       "position": [
         0.0,
         -0.5,
@@ -62,8 +62,8 @@
     },
     {
       "name": "Caster",
-      "model": "assets/models/cube.obj",
-      "texture": "assets/textures/scratch_texture.jpg",
+      "model": "Assets/models/cube.obj",
+      "texture": "Assets/textures/scratch_texture.jpg",
       "position": [
         -4.0,
         1.5,
@@ -89,8 +89,8 @@
     },
     {
       "name": "BlendDecalShadowed",
-      "model": "assets/models/sv_blend_decal_quad.gltf",
-      "texture": "assets/textures/checkerboard.png",
+      "model": "Assets/models/sv_blend_decal_quad.gltf",
+      "texture": "Assets/textures/checkerboard.png",
       "position": [
         -1.4,
         0.01,
@@ -116,8 +116,8 @@
     },
     {
       "name": "BlendDecalLit",
-      "model": "assets/models/sv_blend_decal_quad.gltf",
-      "texture": "assets/textures/checkerboard.png",
+      "model": "Assets/models/sv_blend_decal_quad.gltf",
+      "texture": "Assets/textures/checkerboard.png",
       "position": [
         4.0,
         0.01,

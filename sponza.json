@@ -1,5 +1,5 @@
 ﻿{
-  "_comment": "Sponza + curtains test scene. Assets are NOT bundled in git â€” drop the Intel Sponza glTF + curtains add-on under Assets/External/SceneBible/Sponza/{main,curtains}/. Working directory at runtime is x64/Debug/; paths below use '../../Assets/External/...' to reach the source-tree location instead of going through the asset-deploy copy (External/ is excluded from the vcxproj Asset wildcard for size reasons). The camera + lighting setup is the classic Sponza shot: low cam looking through the atrium with a single directional sun slicing across.",
+  "_comment": "Sponza + curtains test scene. Assets are NOT bundled in git -- run 'dev.py fetch-assets' to download the Intel Sponza glTF + curtains add-on into Assets/External/SceneBible/Sponza/{main,curtains}/. All paths below are project-root-relative, resolved by SceneLoader against the discovered project root regardless of launch directory. The camera + lighting setup is the classic Sponza shot: low cam looking through the atrium with a single directional sun slicing across.",
   "camera": {
     "_comment": "Tuned via dev.py iterate-sponza loop against screenshots/reference.avif. 1 unit forward along corridor axis (horizontal yaw 11.3) from the original interactive pose, FOV 65 (vs 50 baseline). Local min of the RMS surface at iter17 (RMS 66.80) within a fwd / lateral / FOV sweep.",
     "aspectRatio": 1.7777777777777777,
@@ -51,7 +51,7 @@
       "castsShadows": true,
       "isStatic": true,
       "isTransparent": false,
-      "model": "../../Assets/External/SceneBible/Sponza/main/NewSponza_Main_glTF_003.gltf",
+      "model": "Assets/External/SceneBible/Sponza/main/NewSponza_Main_glTF_003.gltf",
       "name": "SponzaMain",
       "position": [
         0.0,
@@ -69,7 +69,7 @@
         1.0,
         1.0
       ],
-      "texture": "assets/textures/marble.jpg",
+      "texture": "Assets/textures/marble.jpg",
       "uvScale": [
         1.0,
         1.0
@@ -79,7 +79,7 @@
       "castsShadows": true,
       "isStatic": true,
       "isTransparent": false,
-      "model": "../../Assets/External/SceneBible/Sponza/curtains/NewSponza_Curtains_glTF.gltf",
+      "model": "Assets/External/SceneBible/Sponza/curtains/NewSponza_Curtains_glTF.gltf",
       "name": "SponzaCurtains",
       "position": [
         0.0,
@@ -97,7 +97,7 @@
         1.0,
         1.0
       ],
-      "texture": "assets/textures/marble.jpg",
+      "texture": "Assets/textures/marble.jpg",
       "uvScale": [
         1.0,
         1.0
@@ -114,8 +114,8 @@
     }
   },
   "render": {
-    "_comment": "Per-scene render overrides applied at startup (SceneLoader.cpp â†’ Application.cpp). Each field has a sentinel meaning 'no override'; omit it to inherit RuntimeConfig / algorithm defaults.",
-    "hdri": "../../Assets/External/SceneBible/Sponza/main/textures/kloppenheim_05_4k.hdr",
+    "_comment": "Per-scene render overrides applied at startup (SceneLoader.cpp -> Application.cpp). Each field has a sentinel meaning 'no override'; omit it to inherit RuntimeConfig / algorithm defaults.",
+    "hdri": "Assets/External/SceneBible/HDRI/kloppenheim_05_4k.hdr",
     "materialOverrides": [
       {
         "match": "arch_stone_wall_01_BaseColor",

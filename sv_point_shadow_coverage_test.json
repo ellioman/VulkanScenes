@@ -39,8 +39,8 @@
   "objects": [
     {
       "name": "Floor",
-      "model": "assets/models/cube.obj",
-      "texture": "assets/textures/checkerboard.png",
+      "model": "Assets/models/cube.obj",
+      "texture": "Assets/textures/checkerboard.png",
       "position": [0.0, -0.5, 0.0],
       "rotation": [0.0, 0.0, 0.0],
       "scale": [20.0, 1.0, 20.0],
@@ -51,8 +51,8 @@
     },
     {
       "name": "PointOccluder",
-      "model": "assets/models/cube.obj",
-      "texture": "assets/textures/scratch_texture.jpg",
+      "model": "Assets/models/cube.obj",
+      "texture": "Assets/textures/scratch_texture.jpg",
       "position": [-2.0, 1.0, 0.0],
       "rotation": [0.0, 0.0, 0.0],
       "scale": [1.0, 1.0, 1.0],
@@ -63,8 +63,8 @@
     },
     {
       "name": "PointReceiverWall",
-      "model": "assets/models/cube.obj",
-      "texture": "assets/textures/marble.jpg",
+      "model": "Assets/models/cube.obj",
+      "texture": "Assets/textures/marble.jpg",
       "position": [-4.0, 1.0, 0.0],
       "rotation": [0.0, 0.0, 0.0],
       "scale": [0.4, 3.0, 5.0],
@@ -75,8 +75,8 @@
     },
     {
       "name": "SpotOccluder",
-      "model": "assets/models/cube.obj",
-      "texture": "assets/textures/scratch_texture.jpg",
+      "model": "Assets/models/cube.obj",
+      "texture": "Assets/textures/scratch_texture.jpg",
       "position": [2.0, 1.0, 2.0],
       "rotation": [0.0, 0.0, 0.0],
       "scale": [1.0, 1.0, 1.0],
@@ -87,8 +87,8 @@
     },
     {
       "name": "OutOfRangeCube",
-      "model": "assets/models/cube.obj",
-      "texture": "assets/textures/gray_cement.png",
+      "model": "Assets/models/cube.obj",
+      "texture": "Assets/textures/gray_cement.png",
       "position": [0.0, 1.0, -9.0],
       "rotation": [0.0, 0.0, 0.0],
       "scale": [1.5, 1.5, 1.5],

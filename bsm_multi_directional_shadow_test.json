@@ -55,8 +55,8 @@
   "objects": [
     {
       "name": "Floor",
-      "model": "assets/models/cube.obj",
-      "texture": "assets/textures/checkerboard.png",
+      "model": "Assets/models/cube.obj",
+      "texture": "Assets/textures/checkerboard.png",
       "position": [
         0.0,
         -0.5,
@@ -82,8 +82,8 @@
     },
     {
       "name": "LeftOccluder",
-      "model": "assets/models/cube.obj",
-      "texture": "assets/textures/scratch_texture.jpg",
+      "model": "Assets/models/cube.obj",
+      "texture": "Assets/textures/scratch_texture.jpg",
       "position": [
         -3.5,
         1.5,
@@ -109,8 +109,8 @@
     },
     {
       "name": "RightOccluder",
-      "model": "assets/models/cube.obj",
-      "texture": "assets/textures/marble.jpg",
+      "model": "Assets/models/cube.obj",
+      "texture": "Assets/textures/marble.jpg",
       "position": [
         3.5,
         1.5,
@@ -136,8 +136,8 @@
     },
     {
       "name": "CenterTeapot",
-      "model": "assets/models/utah_teapot.obj",
-      "texture": "assets/textures/marble.jpg",
+      "model": "Assets/models/utah_teapot.obj",
+      "texture": "Assets/textures/marble.jpg",
       "position": [
         0.0,
         0.0,
