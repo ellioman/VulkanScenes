@@ -1,0 +1,106 @@
+{
+  "camera": {
+    "position": [9.0, 7.0, 9.0],
+    "target": [0.0, 1.5, 0.5],
+    "up": [0.0, 1.0, 0.0],
+    "fov": 55.0,
+    "aspectRatio": 1.7777777777777777,
+    "nearPlane": 0.1,
+    "farPlane": 100.0
+  },
+  "directionalLight": {
+    "direction": [-0.3, -1.0, -0.2],
+    "intensity": 0.1,
+    "castShadows": false
+  },
+  "spotLights": [
+    {
+      "position": [2.0, 7.0, 6.0],
+      "direction": [0.0, -1.0, -0.35],
+      "color": [0.4, 0.6, 1.0],
+      "intensity": 8.0,
+      "innerConeAngle": 16.0,
+      "outerConeAngle": 30.0,
+      "range": 20.0,
+      "enabled": true,
+      "castShadows": true
+    }
+  ],
+  "pointLights": [
+    {
+      "position": [0.0, 2.0, 0.0],
+      "color": [1.0, 0.85, 0.6],
+      "intensity": 6.0,
+      "range": 6.0,
+      "enabled": true,
+      "castShadows": true
+    }
+  ],
+  "objects": [
+    {
+      "name": "Floor",
+      "model": "assets/models/cube.obj",
+      "texture": "assets/textures/checkerboard.png",
+      "position": [0.0, -0.5, 0.0],
+      "rotation": [0.0, 0.0, 0.0],
+      "scale": [20.0, 1.0, 20.0],
+      "uvScale": [10.0, 10.0],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "PointOccluder",
+      "model": "assets/models/cube.obj",
+      "texture": "assets/textures/scratch_texture.jpg",
+      "position": [-2.0, 1.0, 0.0],
+      "rotation": [0.0, 0.0, 0.0],
+      "scale": [1.0, 1.0, 1.0],
+      "uvScale": [1.0, 1.0],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "PointReceiverWall",
+      "model": "assets/models/cube.obj",
+      "texture": "assets/textures/marble.jpg",
+      "position": [-4.0, 1.0, 0.0],
+      "rotation": [0.0, 0.0, 0.0],
+      "scale": [0.4, 3.0, 5.0],
+      "uvScale": [2.0, 2.0],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "SpotOccluder",
+      "model": "assets/models/cube.obj",
+      "texture": "assets/textures/scratch_texture.jpg",
+      "position": [2.0, 1.0, 2.0],
+      "rotation": [0.0, 0.0, 0.0],
+      "scale": [1.0, 1.0, 1.0],
+      "uvScale": [1.0, 1.0],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "OutOfRangeCube",
+      "model": "assets/models/cube.obj",
+      "texture": "assets/textures/gray_cement.png",
+      "position": [0.0, 1.0, -9.0],
+      "rotation": [0.0, 0.0, 0.0],
+      "scale": [1.5, 1.5, 1.5],
+      "uvScale": [1.0, 1.0],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    }
+  ],
+  "debug": {
+    "drawAxisLines": false,
+    "drawGridLines": false,
+    "showLightDebug": false
+  }
+}

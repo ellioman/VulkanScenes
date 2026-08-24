@@ -1,0 +1,193 @@
+{
+  "camera": {
+    "position": [
+      7.0,
+      5.0,
+      7.0
+    ],
+    "target": [
+      0.0,
+      2.5,
+      -1.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 55.0,
+    "aspectRatio": 1.7777777777777777,
+    "nearPlane": 0.1,
+    "farPlane": 100.0
+  },
+  "directionalLight": {
+    "direction": [
+      -0.3,
+      -1.0,
+      -0.2
+    ],
+    "intensity": 0.15,
+    "castShadows": false
+  },
+  "pointLights": [
+    {
+      "position": [
+        0.0,
+        2.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.95,
+        0.85
+      ],
+      "intensity": 6.0,
+      "range": 9.0,
+      "enabled": true,
+      "castShadows": true
+    }
+  ],
+  "objects": [
+    {
+      "name": "Floor",
+      "model": "assets/models/cube.obj",
+      "texture": "assets/textures/checkerboard.png",
+      "position": [
+        0.0,
+        -0.5,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        14.0,
+        1.0,
+        14.0
+      ],
+      "uvScale": [
+        7.0,
+        7.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "Ceiling",
+      "model": "assets/models/cube.obj",
+      "texture": "assets/textures/gray_cement.png",
+      "position": [
+        0.0,
+        6.5,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        14.0,
+        1.0,
+        14.0
+      ],
+      "uvScale": [
+        7.0,
+        7.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "BackWall",
+      "model": "assets/models/cube.obj",
+      "texture": "assets/textures/marble.jpg",
+      "position": [
+        0.0,
+        3.0,
+        -4.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        14.0,
+        7.0,
+        1.0
+      ],
+      "uvScale": [
+        7.0,
+        3.5
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "WallOccluder",
+      "model": "assets/models/cube.obj",
+      "texture": "assets/textures/scratch_texture.jpg",
+      "position": [
+        0.0,
+        2.0,
+        -2.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "TransparentReceiver",
+      "model": "assets/models/cube.obj",
+      "texture": "assets/textures/marble.jpg",
+      "position": [
+        0.0,
+        2.0,
+        -3.3
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        2.0,
+        2.0,
+        0.2
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": true,
+      "alpha": 0.5
+    }
+  ],
+  "debug": {
+    "drawAxisLines": false,
+    "drawGridLines": false,
+    "showLightDebug": false
+  }
+}

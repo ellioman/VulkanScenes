@@ -1,0 +1,356 @@
+﻿{
+  "_comment": "Sponza + curtains test scene. Assets are NOT bundled in git â€” drop the Intel Sponza glTF + curtains add-on under Assets/External/SceneBible/Sponza/{main,curtains}/. Working directory at runtime is x64/Debug/; paths below use '../../Assets/External/...' to reach the source-tree location instead of going through the asset-deploy copy (External/ is excluded from the vcxproj Asset wildcard for size reasons). The camera + lighting setup is the classic Sponza shot: low cam looking through the atrium with a single directional sun slicing across.",
+  "camera": {
+    "_comment": "Tuned via dev.py iterate-sponza loop against screenshots/reference.avif. 1 unit forward along corridor axis (horizontal yaw 11.3) from the original interactive pose, FOV 65 (vs 50 baseline). Local min of the RMS surface at iter17 (RMS 66.80) within a fwd / lateral / FOV sweep.",
+    "aspectRatio": 1.7777777777777777,
+    "farPlane": 100.0,
+    "fov": 61.0,
+    "nearPlane": 0.1,
+    "position": [
+      -8.5198,
+      1.4611,
+      -1.0683
+    ],
+    "target": [
+      -3.7248,
+      2.3721,
+      0.0207
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "debug": {
+    "drawAxisLines": false,
+    "drawGridLines": false,
+    "showLightDebug": false
+  },
+  "directionalLight": {
+    "_comment": "Sun coming from BEYOND the atrium opening (-X bias so light travels -X), backlighting the corridor. Matches the reference's bright-back / dark-foreground gradient.",
+    "castShadows": true,
+    "color": [
+      1.0,
+      0.95,
+      0.88
+    ],
+    "direction": [
+      0.372,
+      -0.555,
+      0.07
+    ],
+    "intensity": 14.0,
+    "shadow": {
+      "farPlane": 80.0,
+      "nearPlane": 0.1
+    }
+  },
+  "objects": [
+    {
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false,
+      "model": "../../Assets/External/SceneBible/Sponza/main/NewSponza_Main_glTF_003.gltf",
+      "name": "SponzaMain",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "receivesShadows": true,
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "assets/textures/marble.jpg",
+      "uvScale": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false,
+      "model": "../../Assets/External/SceneBible/Sponza/curtains/NewSponza_Curtains_glTF.gltf",
+      "name": "SponzaCurtains",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "receivesShadows": true,
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "assets/textures/marble.jpg",
+      "uvScale": [
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "extensions": {
+    "_comment": "Opaque per-module config. Each child key matches a registered scene-extension parser (see IRenderer::registerSceneExtensionParser).",
+    "ambientOcclusion": {
+      "enabled": true
+    },
+    "ibl": {
+      "intensity": 0.6
+    }
+  },
+  "render": {
+    "_comment": "Per-scene render overrides applied at startup (SceneLoader.cpp â†’ Application.cpp). Each field has a sentinel meaning 'no override'; omit it to inherit RuntimeConfig / algorithm defaults.",
+    "hdri": "../../Assets/External/SceneBible/Sponza/main/textures/kloppenheim_05_4k.hdr",
+    "materialOverrides": [
+      {
+        "match": "arch_stone_wall_01_BaseColor",
+        "metallic": 0.9100000262260437,
+        "normalMapStrength": 0.18000000715255737,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "stone_trims_01_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.4399999976158142,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "metal_door_01_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.10999999940395355,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "brickwall_02_BaseColor",
+        "metallic": 0.6700000166893005,
+        "normalMapStrength": 0.4300000071525574,
+        "roughness": 0.7699999809265137,
+        "shininess": 32.0
+      },
+      {
+        "match": "stones_2ndfloor_01_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.03999999910593033,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "stone_trims_02_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.07999999821186066,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "ceiling_plaster_02_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.029999999329447746,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "window_frame_01_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.029999999329447746,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "stone_01_tile_BaseColor",
+        "metallic": 0.7400000095367432,
+        "normalMapStrength": 0.17000000178813934,
+        "roughness": 0.9399999976158142,
+        "shininess": 32.0
+      },
+      {
+        "match": "col_1stfloor_BaseColor",
+        "metallic": 0.75,
+        "normalMapStrength": 0.20000000298023224,
+        "roughness": 0.9900000095367432,
+        "shininess": 32.0
+      },
+      {
+        "match": "col_head_1stfloor_BaseColor",
+        "metallic": 0.9100000262260437,
+        "normalMapStrength": 0.20000000298023224,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "<builtin",
+        "metallic": 0.0,
+        "normalMapStrength": 0.029999999329447746,
+        "roughness": 0.38999998569488525,
+        "shininess": 32.0
+      },
+      {
+        "match": "<builtin",
+        "metallic": 0.0,
+        "normalMapStrength": 0.029999999329447746,
+        "roughness": 0.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "door_stoneframe_02_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.07999999821186066,
+        "roughness": 0.8299999833106995,
+        "shininess": 32.0
+      },
+      {
+        "match": "<builtin",
+        "metallic": 0.0,
+        "normalMapStrength": 0.029999999329447746,
+        "roughness": 0.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "door_stoneframe_01_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.07000000029802322,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "brickwall_01_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.07999999821186066,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "wood_door_01_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.18000000715255737,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "wood_tile_01_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.029999999329447746,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "floor_tiles_01_BaseColor",
+        "metallic": 0.47999998927116394,
+        "normalMapStrength": 0.0,
+        "roughness": 0.699999988079071,
+        "shininess": 32.0
+      },
+      {
+        "match": "lionhead_01_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.20000000298023224,
+        "roughness": 0.8500000238418579,
+        "shininess": 32.0
+      },
+      {
+        "match": "dirt_decal_01_dirt_decal_01_mask_gltf_alpha_dirt_decal_Opacity",
+        "metallic": 1.0,
+        "normalMapStrength": 0.029999999329447746,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "col_head_2ndfloor_02_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.029999999329447746,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "col_brickwall_01_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.07999999821186066,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "col_head_2ndfloor_03_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.029999999329447746,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "ceiling_plaster_01_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.029999999329447746,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "roof_tiles_01_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.029999999329447746,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "ornament_01_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.029999999329447746,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "marble",
+        "metallic": 0.0,
+        "normalMapStrength": 1.0,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "metal_door_01_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.029999999329447746,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "curtain_fabric_red_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.10000000149011612,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "curtain_fabric_blue_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.10000000149011612,
+        "roughness": 1.0,
+        "shininess": 32.0
+      },
+      {
+        "match": "curtain_fabric_green_BaseColor",
+        "metallic": 1.0,
+        "normalMapStrength": 0.10000000149011612,
+        "roughness": 1.0,
+        "shininess": 32.0
+      }
+    ],
+    "pcfFilterRadius": 2.0,
+    "pcfKernelSize": 5
+  },
+  "spotLights": []
+}

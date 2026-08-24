@@ -1,0 +1,165 @@
+{
+  "camera": {
+    "position": [
+      14.0,
+      4.0,
+      0.0
+    ],
+    "target": [
+      0.0,
+      2.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 60.0,
+    "aspectRatio": 1.7777777777777777,
+    "nearPlane": 0.1,
+    "farPlane": 100.0
+  },
+  "directionalLight": {
+    "direction": [
+      -0.3,
+      -1.0,
+      -0.2
+    ],
+    "intensity": 0.0,
+    "castShadows": false
+  },
+  "pointLights": [
+    {
+      "position": [
+        0.0,
+        2.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.95,
+        0.85
+      ],
+      "intensity": 30.0,
+      "range": 14.0,
+      "enabled": true,
+      "castShadows": true
+    }
+  ],
+  "objects": [
+    {
+      "name": "WallPlusZ",
+      "model": "assets/models/cube.obj",
+      "texture": "assets/textures/checkerboard.png",
+      "position": [
+        0.0,
+        2.0,
+        6.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        8.0,
+        4.0,
+        1.0
+      ],
+      "uvScale": [
+        8.0,
+        4.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "WallMinusZ",
+      "model": "assets/models/cube.obj",
+      "texture": "assets/textures/checkerboard.png",
+      "position": [
+        0.0,
+        2.0,
+        -6.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        8.0,
+        4.0,
+        1.0
+      ],
+      "uvScale": [
+        8.0,
+        4.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "OccluderPlusZ",
+      "model": "assets/models/cube.obj",
+      "texture": "assets/textures/scratch_texture.jpg",
+      "position": [
+        0.0,
+        2.6,
+        3.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "OccluderMinusZ",
+      "model": "assets/models/cube.obj",
+      "texture": "assets/textures/scratch_texture.jpg",
+      "position": [
+        0.0,
+        1.4,
+        -3.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    }
+  ],
+  "debug": {
+    "drawAxisLines": false,
+    "drawGridLines": false,
+    "showLightDebug": false
+  }
+}
