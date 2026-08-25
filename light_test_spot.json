@@ -1,0 +1,2485 @@
+{
+  "camera": {
+    "position": [
+      -28.0,
+      15.0,
+      28.0
+    ],
+    "target": [
+      6.0,
+      0.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 45.0,
+    "aspectRatio": 1.7777777777777777,
+    "nearPlane": 0.1,
+    "farPlane": 100.0
+  },
+  "_comment": "Light-type-isolated verification scene: spot lights ONLY, no directional/point contribution, for scripted per-algorithm shadow verification (dev.py scene <path>). Directional light present but disabled (SceneLoader requires the field).",
+  "directionalLight": {
+    "direction": [
+      -16.0,
+      -22.0,
+      -22.0
+    ],
+    "intensity": 0.25,
+    "enabled": false,
+    "castShadows": true,
+    "shadow": {
+      "farPlane": 90.0
+    }
+  },
+  "spotLights": [
+    {
+      "position": [
+        -12.0,
+        14.0,
+        12.0
+      ],
+      "direction": [
+        0.05,
+        -1.0,
+        -0.05
+      ],
+      "color": [
+        1.0,
+        0.9,
+        0.5
+      ],
+      "intensity": 3.5,
+      "innerConeAngle": 22.0,
+      "outerConeAngle": 38.0,
+      "range": 30.0
+    },
+    {
+      "position": [
+        24.0,
+        14.0,
+        -12.0
+      ],
+      "direction": [
+        -0.05,
+        -1.0,
+        0.05
+      ],
+      "color": [
+        0.3,
+        0.5,
+        1.0
+      ],
+      "intensity": 3.0,
+      "innerConeAngle": 20.0,
+      "outerConeAngle": 35.0,
+      "range": 30.0
+    },
+    {
+      "position": [
+        0.0,
+        13.0,
+        0.0
+      ],
+      "direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "color": [
+        0.4,
+        1.0,
+        0.5
+      ],
+      "intensity": 2.5,
+      "innerConeAngle": 18.0,
+      "outerConeAngle": 32.0,
+      "range": 28.0
+    },
+    {
+      "position": [
+        18.0,
+        13.0,
+        12.0
+      ],
+      "direction": [
+        -0.05,
+        -1.0,
+        -0.05
+      ],
+      "color": [
+        1.0,
+        0.3,
+        0.7
+      ],
+      "intensity": 2.5,
+      "innerConeAngle": 16.0,
+      "outerConeAngle": 28.0,
+      "range": 25.0
+    },
+    {
+      "position": [
+        -12.0,
+        14.0,
+        -15.0
+      ],
+      "direction": [
+        0.03,
+        -1.0,
+        0.03
+      ],
+      "color": [
+        1.0,
+        0.7,
+        0.2
+      ],
+      "intensity": 3.0,
+      "innerConeAngle": 20.0,
+      "outerConeAngle": 36.0,
+      "range": 30.0
+    },
+    {
+      "position": [
+        24.0,
+        13.0,
+        6.0
+      ],
+      "direction": [
+        -0.03,
+        -1.0,
+        0.0
+      ],
+      "color": [
+        0.2,
+        0.9,
+        1.0
+      ],
+      "intensity": 2.5,
+      "innerConeAngle": 18.0,
+      "outerConeAngle": 32.0,
+      "range": 28.0
+    },
+    {
+      "position": [
+        6.0,
+        12.0,
+        -18.0
+      ],
+      "direction": [
+        0.0,
+        -1.0,
+        0.05
+      ],
+      "color": [
+        1.0,
+        0.95,
+        0.85
+      ],
+      "intensity": 2.8,
+      "innerConeAngle": 20.0,
+      "outerConeAngle": 34.0,
+      "range": 28.0
+    },
+    {
+      "position": [
+        33.0,
+        14.0,
+        0.0
+      ],
+      "direction": [
+        -0.08,
+        -1.0,
+        0.0
+      ],
+      "color": [
+        0.7,
+        0.4,
+        1.0
+      ],
+      "intensity": 2.5,
+      "innerConeAngle": 18.0,
+      "outerConeAngle": 30.0,
+      "range": 26.0
+    }
+  ],
+  "objects": [
+    {
+      "name": "Floor",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [
+        6.0,
+        -0.5,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        250.0,
+        1.0,
+        250.0
+      ],
+      "uvScale": [
+        15.0,
+        15.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R1_Cube1",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        -21.0,
+        0.75,
+        -21.0
+      ],
+      "rotation": [
+        0.0,
+        0.3,
+        0.0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R1_Teapot1",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        -15.0,
+        0.0,
+        -21.0
+      ],
+      "rotation": [
+        0.0,
+        0.5,
+        0.0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R1_Sphere1",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        -9.0,
+        0.61,
+        -21.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R1_Armadillo1",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        -3.0,
+        0.81,
+        -21.0
+      ],
+      "rotation": [
+        0.0,
+        0.8,
+        0.0
+      ],
+      "scale": [
+        0.015,
+        0.015,
+        0.015
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R1_Bunny1",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        3.0,
+        1.24,
+        -21.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R1_Teapot3",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        9.0,
+        0.0,
+        -21.0
+      ],
+      "rotation": [
+        0.0,
+        -0.5,
+        0.0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R1_Bunny2",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        15.0,
+        0.93,
+        -21.0
+      ],
+      "rotation": [
+        0.0,
+        40.0,
+        0.0
+      ],
+      "scale": [
+        0.15,
+        0.15,
+        0.15
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R1_Sphere2",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        21.0,
+        0.82,
+        -21.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R1_Cube3",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        27.0,
+        1.0,
+        -21.0
+      ],
+      "rotation": [
+        0.0,
+        0.6,
+        0.0
+      ],
+      "scale": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R1_Teapot2",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        33.0,
+        0.0,
+        -21.0
+      ],
+      "rotation": [
+        0.0,
+        -0.3,
+        0.0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R2_Teapot2",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        -21.0,
+        0.0,
+        -15.0
+      ],
+      "rotation": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R2_Cube1",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        -15.0,
+        0.6,
+        -15.0
+      ],
+      "rotation": [
+        0.0,
+        1.1,
+        0.0
+      ],
+      "scale": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R2_Armadillo1",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        -9.0,
+        0.81,
+        -15.0
+      ],
+      "rotation": [
+        0.0,
+        2.0,
+        0.0
+      ],
+      "scale": [
+        0.015,
+        0.015,
+        0.015
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R2_Sphere1",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        -3.0,
+        0.72,
+        -15.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.35,
+        0.35,
+        0.35
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R2_Teapot1",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        3.0,
+        0.0,
+        -15.0
+      ],
+      "rotation": [
+        0.0,
+        -0.7,
+        0.0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R2_Cube2",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        9.0,
+        0.75,
+        -15.0
+      ],
+      "rotation": [
+        0.0,
+        0.2,
+        0.0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R2_Bunny1",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        15.0,
+        0.93,
+        -15.0
+      ],
+      "rotation": [
+        0.0,
+        30.0,
+        0.0
+      ],
+      "scale": [
+        0.15,
+        0.15,
+        0.15
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R2_Cube3",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        21.0,
+        0.5,
+        -15.0
+      ],
+      "rotation": [
+        0.0,
+        -0.3,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R2_Bunny2",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        27.0,
+        1.24,
+        -15.0
+      ],
+      "rotation": [
+        0.0,
+        -25.0,
+        0.0
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R2_Sphere2",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        33.0,
+        0.61,
+        -15.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R3_Sphere1",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        -21.0,
+        0.82,
+        -9.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R3_Armadillo2",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        -15.0,
+        0.81,
+        -9.0
+      ],
+      "rotation": [
+        0.0,
+        1.5,
+        0.0
+      ],
+      "scale": [
+        0.015,
+        0.015,
+        0.015
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R3_Cube1",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        -9.0,
+        0.75,
+        -9.0
+      ],
+      "rotation": [
+        0.0,
+        0.5,
+        0.0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R3_Teapot1",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        -3.0,
+        0.0,
+        -9.0
+      ],
+      "rotation": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R3_Armadillo1",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        3.0,
+        0.81,
+        -9.0
+      ],
+      "rotation": [
+        0.0,
+        -0.6,
+        0.0
+      ],
+      "scale": [
+        0.015,
+        0.015,
+        0.015
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R3_Teapot2",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        9.0,
+        0.0,
+        -9.0
+      ],
+      "rotation": [
+        0.0,
+        0.3,
+        0.0
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R3_Cube2",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        15.0,
+        1.0,
+        -9.0
+      ],
+      "rotation": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "scale": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R3_Sphere2",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        21.0,
+        0.51,
+        -9.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R3_Bunny1",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        27.0,
+        1.24,
+        -9.0
+      ],
+      "rotation": [
+        0.0,
+        -45.0,
+        0.0
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R3_Cube3",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        33.0,
+        0.6,
+        -9.0
+      ],
+      "rotation": [
+        0.0,
+        0.4,
+        0.0
+      ],
+      "scale": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R4_Teapot1",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        -21.0,
+        0.0,
+        -3.0
+      ],
+      "rotation": [
+        0.0,
+        0.2,
+        0.0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R4_Cube1",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        -15.0,
+        0.5,
+        -3.0
+      ],
+      "rotation": [
+        0.0,
+        -0.6,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R4_Bunny1",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        -9.0,
+        0.93,
+        -3.0
+      ],
+      "rotation": [
+        0.0,
+        60.0,
+        0.0
+      ],
+      "scale": [
+        0.15,
+        0.15,
+        0.15
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R4_Cube4",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        -3.0,
+        0.75,
+        -3.0
+      ],
+      "rotation": [
+        0.0,
+        -0.3,
+        0.0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R4_Sphere1",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        3.0,
+        1.02,
+        -3.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R4_Cube2",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        9.0,
+        0.75,
+        -3.0
+      ],
+      "rotation": [
+        0.0,
+        0.7,
+        0.0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R4_Armadillo1",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        15.0,
+        0.81,
+        -3.0
+      ],
+      "rotation": [
+        0.0,
+        1.4,
+        0.0
+      ],
+      "scale": [
+        0.015,
+        0.015,
+        0.015
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R4_Teapot2",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        21.0,
+        0.0,
+        -3.0
+      ],
+      "rotation": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R4_Cube3",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        27.0,
+        0.6,
+        -3.0
+      ],
+      "rotation": [
+        0.0,
+        1.3,
+        0.0
+      ],
+      "scale": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R4_Sphere2",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        33.0,
+        0.72,
+        -3.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.35,
+        0.35,
+        0.35
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R5_Armadillo1",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        -21.0,
+        0.81,
+        3.0
+      ],
+      "rotation": [
+        0.0,
+        -1.2,
+        0.0
+      ],
+      "scale": [
+        0.015,
+        0.015,
+        0.015
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R5_Sphere1",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        -15.0,
+        0.61,
+        3.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R5_Cube1",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        -9.0,
+        1.0,
+        3.0
+      ],
+      "rotation": [
+        0.0,
+        -0.2,
+        0.0
+      ],
+      "scale": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R5_Teapot2",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        -3.0,
+        0.0,
+        3.0
+      ],
+      "rotation": [
+        0.0,
+        0.3,
+        0.0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R5_Teapot1",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        3.0,
+        0.0,
+        3.0
+      ],
+      "rotation": [
+        0.0,
+        0.5,
+        0.0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R5_Bunny1",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        9.0,
+        1.24,
+        3.0
+      ],
+      "rotation": [
+        0.0,
+        -20.0,
+        0.0
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R5_Sphere2",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        15.0,
+        0.82,
+        3.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R5_Cube2",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        21.0,
+        0.5,
+        3.0
+      ],
+      "rotation": [
+        0.0,
+        0.9,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R5_Armadillo2",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        27.0,
+        0.65,
+        3.0
+      ],
+      "rotation": [
+        0.0,
+        2.0,
+        0.0
+      ],
+      "scale": [
+        0.012,
+        0.012,
+        0.012
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R5_Cube3",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        33.0,
+        0.75,
+        3.0
+      ],
+      "rotation": [
+        0.0,
+        -0.7,
+        0.0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R6_Cube1",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        -21.0,
+        0.6,
+        9.0
+      ],
+      "rotation": [
+        0.0,
+        0.4,
+        0.0
+      ],
+      "scale": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R6_Teapot1",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        -15.0,
+        0.0,
+        9.0
+      ],
+      "rotation": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R6_Bunny1",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        -9.0,
+        0.93,
+        9.0
+      ],
+      "rotation": [
+        0.0,
+        45.0,
+        0.0
+      ],
+      "scale": [
+        0.15,
+        0.15,
+        0.15
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R6_Cube2",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        -3.0,
+        0.75,
+        9.0
+      ],
+      "rotation": [
+        0.0,
+        1.3,
+        0.0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R6_Bunny2",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        3.0,
+        1.24,
+        9.0
+      ],
+      "rotation": [
+        0.0,
+        -55.0,
+        0.0
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R6_Sphere1",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        9.0,
+        0.72,
+        9.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.35,
+        0.35,
+        0.35
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R6_Armadillo1",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        15.0,
+        0.65,
+        9.0
+      ],
+      "rotation": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "scale": [
+        0.012,
+        0.012,
+        0.012
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R6_Cube3",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        21.0,
+        1.0,
+        9.0
+      ],
+      "rotation": [
+        0.0,
+        -0.9,
+        0.0
+      ],
+      "scale": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R6_Teapot2",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        27.0,
+        0.0,
+        9.0
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R6_Teapot3",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        33.0,
+        0.0,
+        9.0
+      ],
+      "rotation": [
+        0.0,
+        -2.0,
+        0.0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R7_Armadillo2",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        -21.0,
+        0.81,
+        15.0
+      ],
+      "rotation": [
+        0.0,
+        0.6,
+        0.0
+      ],
+      "scale": [
+        0.015,
+        0.015,
+        0.015
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R7_Teapot2",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        -15.0,
+        0.0,
+        15.0
+      ],
+      "rotation": [
+        0.0,
+        -0.3,
+        0.0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R7_Sphere1",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        -9.0,
+        0.82,
+        15.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R7_Armadillo1",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        -3.0,
+        0.81,
+        15.0
+      ],
+      "rotation": [
+        0.0,
+        2.5,
+        0.0
+      ],
+      "scale": [
+        0.015,
+        0.015,
+        0.015
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R7_Cube1",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        3.0,
+        0.5,
+        15.0
+      ],
+      "rotation": [
+        0.0,
+        -1.2,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R7_Teapot1",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        9.0,
+        0.0,
+        15.0
+      ],
+      "rotation": [
+        0.0,
+        0.8,
+        0.0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R7_Cube2",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        15.0,
+        0.75,
+        15.0
+      ],
+      "rotation": [
+        0.0,
+        0.5,
+        0.0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R7_Sphere2",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        21.0,
+        0.51,
+        15.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R7_Bunny1",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        27.0,
+        1.24,
+        15.0
+      ],
+      "rotation": [
+        0.0,
+        -70.0,
+        0.0
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R7_Cube3",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        33.0,
+        0.6,
+        15.0
+      ],
+      "rotation": [
+        0.0,
+        -0.5,
+        0.0
+      ],
+      "scale": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R8_Cube1",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        -21.0,
+        0.75,
+        21.0
+      ],
+      "rotation": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R8_Armadillo1",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        -15.0,
+        0.81,
+        21.0
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "scale": [
+        0.015,
+        0.015,
+        0.015
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R8_Teapot1",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        -9.0,
+        0.0,
+        21.0
+      ],
+      "rotation": [
+        0.0,
+        -0.6,
+        0.0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R8_Bunny1",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        -3.0,
+        0.93,
+        21.0
+      ],
+      "rotation": [
+        0.0,
+        15.0,
+        0.0
+      ],
+      "scale": [
+        0.15,
+        0.15,
+        0.15
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R8_Sphere3",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        3.0,
+        0.82,
+        21.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R8_Sphere1",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        9.0,
+        1.02,
+        21.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R8_Cube3",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        15.0,
+        1.0,
+        21.0
+      ],
+      "rotation": [
+        0.0,
+        0.6,
+        0.0
+      ],
+      "scale": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R8_Bunny2",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        21.0,
+        0.93,
+        21.0
+      ],
+      "rotation": [
+        0.0,
+        -35.0,
+        0.0
+      ],
+      "scale": [
+        0.15,
+        0.15,
+        0.15
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R8_Sphere2",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        27.0,
+        0.61,
+        21.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "R8_Teapot2",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        33.0,
+        0.0,
+        21.0
+      ],
+      "rotation": [
+        0.0,
+        0.4,
+        0.0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "GlassCube1",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        -12.0,
+        0.76,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.4,
+        0.0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": true,
+      "alpha": 0.4
+    },
+    {
+      "name": "GlassSphere1",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        18.0,
+        0.61,
+        -6.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": true,
+      "alpha": 0.5
+    },
+    {
+      "name": "GlassTeapot1",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        6.0,
+        0.0,
+        18.0
+      ],
+      "rotation": [
+        0.0,
+        0.8,
+        0.0
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": true,
+      "alpha": 0.45
+    }
+  ],
+  "debug": {
+    "drawAxisLines": false,
+    "drawGridLines": false,
+    "showLightDebug": false
+  }
+}

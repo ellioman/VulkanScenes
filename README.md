@@ -25,6 +25,18 @@ scene content (`sponza.json`, `default.json`, and the per-algorithm test
 scenes) lives here rather than in a project-local directory, so it can be
 reused unchanged by other projects that depend on `Renderer/`.
 
+`spinning_fan_demo.json`, `light_test_directional.json`,
+`light_test_spot.json`, and `light_test_point.json` are light-type
+verification scenes. The fan demo authors all three light types
+(directional/spot/point), only one enabled by default, switchable via each
+light's `Enabled` checkbox in the debug UI — useful for visually comparing
+how a moving shadow looks under each light type. The three `light_test_*`
+scenes each author exactly one light type (the others present but
+disabled, since `directionalLight` is a required top-level field) reusing
+`default.json`'s grid-of-boxes geometry, for scripted per-algorithm
+verification (`dev.py scene <path>`) with no other light type's
+contribution to confound the result.
+
 For the scene-loading library itself (`Scene`, `SceneLoader`, `SceneObject`,
 the JSON schema) see `Renderer/README.md`, which documents the
 library/content boundary. `Renderer/Scene/` provides the loader, types, and

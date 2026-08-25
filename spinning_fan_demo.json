@@ -1,0 +1,180 @@
+{
+  "_comment": "Dark room, spinning two-blade fan under an overhead light. All three light types are authored (directional, spot, point), positioned to illuminate the fan, but only one is enabled by default -- switch via each light's Enabled checkbox in the debug UI to compare how directional/spot/point shadows look under motion. Point-light shadow casting (B.15, cube-map on BSM/SV/PPS) is live, so all three light types can cast the fan's spinning shadow depending on active algorithm/mode support.",
+  "camera": {
+    "position": [
+      0.0,
+      10.0,
+      16.0
+    ],
+    "target": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 50.0,
+    "aspectRatio": 1.7777777777777777,
+    "nearPlane": 0.1,
+    "farPlane": 100.0
+  },
+  "directionalLight": {
+    "direction": [
+      -0.25,
+      -1.0,
+      -0.15
+    ],
+    "color": [
+      1.0,
+      0.95,
+      0.85
+    ],
+    "intensity": 0.6,
+    "enabled": true,
+    "castShadows": true,
+    "shadow": {
+      "farPlane": 40.0
+    }
+  },
+  "spotLights": [
+    {
+      "position": [
+        0.0,
+        9.0,
+        0.0
+      ],
+      "direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.95,
+        0.85
+      ],
+      "intensity": 8.0,
+      "enabled": false,
+      "castShadows": true,
+      "innerConeAngle": 25.0,
+      "outerConeAngle": 42.0,
+      "range": 20.0
+    }
+  ],
+  "pointLights": [
+    {
+      "position": [
+        0.0,
+        7.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.95,
+        0.85
+      ],
+      "intensity": 9.0,
+      "enabled": false,
+      "castShadows": true,
+      "range": 20.0
+    }
+  ],
+  "objects": [
+    {
+      "name": "Floor",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [
+        0.0,
+        -0.5,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        30.0,
+        1.0,
+        30.0
+      ],
+      "uvScale": [
+        10.0,
+        10.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "FanBladeA",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        0.0,
+        5.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        8.0,
+        0.3,
+        0.3
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": false,
+      "isTransparent": false,
+      "spinSpeed": 90.0
+    },
+    {
+      "name": "FanBladeB",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        0.0,
+        5.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "scale": [
+        8.0,
+        0.3,
+        0.3
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": false,
+      "isTransparent": false,
+      "spinSpeed": 90.0
+    }
+  ],
+  "extensions": {
+    "ibl": {
+      "intensity": 0.0
+    }
+  },
+  "debug": {
+    "drawAxisLines": false,
+    "drawGridLines": false,
+    "showLightDebug": false
+  }
+}
