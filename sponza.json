@@ -69,7 +69,7 @@
         1.0,
         1.0
       ],
-      "texture": "Assets/textures/marble.jpg",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "uvScale": [
         1.0,
         1.0
@@ -97,7 +97,7 @@
         1.0,
         1.0
       ],
-      "texture": "Assets/textures/marble.jpg",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "uvScale": [
         1.0,
         1.0

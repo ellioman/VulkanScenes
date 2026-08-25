@@ -205,8 +205,8 @@
   "objects": [
     {
       "name": "Floor",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/checkerboard.png",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
       "position": [
         6.0,
         -0.5,
@@ -232,8 +232,8 @@
     },
     {
       "name": "R1_Cube1",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         -21.0,
         0.75,
@@ -259,8 +259,8 @@
     },
     {
       "name": "R1_Teapot1",
-      "model": "Assets/models/utah_teapot.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         -15.0,
         0.0,
@@ -286,8 +286,8 @@
     },
     {
       "name": "R1_Sphere1",
-      "model": "Assets/models/sphere.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         -9.0,
         0.61,
@@ -313,8 +313,8 @@
     },
     {
       "name": "R1_Armadillo1",
-      "model": "Assets/models/armadillo.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         -3.0,
         0.81,
@@ -340,8 +340,8 @@
     },
     {
       "name": "R1_Bunny1",
-      "model": "Assets/models/stanford_bunny.gltf",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         3.0,
         1.24,
@@ -367,8 +367,8 @@
     },
     {
       "name": "R1_Teapot3",
-      "model": "Assets/models/utah_teapot.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         9.0,
         0.0,
@@ -394,8 +394,8 @@
     },
     {
       "name": "R1_Bunny2",
-      "model": "Assets/models/stanford_bunny.gltf",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         15.0,
         0.93,
@@ -421,8 +421,8 @@
     },
     {
       "name": "R1_Sphere2",
-      "model": "Assets/models/sphere.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         21.0,
         0.82,
@@ -448,8 +448,8 @@
     },
     {
       "name": "R1_Cube3",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         27.0,
         1.0,
@@ -475,8 +475,8 @@
     },
     {
       "name": "R1_Teapot2",
-      "model": "Assets/models/utah_teapot.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         33.0,
         0.0,
@@ -502,8 +502,8 @@
     },
     {
       "name": "R2_Teapot2",
-      "model": "Assets/models/utah_teapot.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         -21.0,
         0.0,
@@ -529,8 +529,8 @@
     },
     {
       "name": "R2_Cube1",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         -15.0,
         0.6,
@@ -556,8 +556,8 @@
     },
     {
       "name": "R2_Armadillo1",
-      "model": "Assets/models/armadillo.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         -9.0,
         0.81,
@@ -583,8 +583,8 @@
     },
     {
       "name": "R2_Sphere1",
-      "model": "Assets/models/sphere.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         -3.0,
         0.72,
@@ -610,8 +610,8 @@
     },
     {
       "name": "R2_Teapot1",
-      "model": "Assets/models/utah_teapot.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         3.0,
         0.0,
@@ -637,8 +637,8 @@
     },
     {
       "name": "R2_Cube2",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         9.0,
         0.75,
@@ -664,8 +664,8 @@
     },
     {
       "name": "R2_Bunny1",
-      "model": "Assets/models/stanford_bunny.gltf",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         15.0,
         0.93,
@@ -691,8 +691,8 @@
     },
     {
       "name": "R2_Cube3",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         21.0,
         0.5,
@@ -718,8 +718,8 @@
     },
     {
       "name": "R2_Bunny2",
-      "model": "Assets/models/stanford_bunny.gltf",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         27.0,
         1.24,
@@ -745,8 +745,8 @@
     },
     {
       "name": "R2_Sphere2",
-      "model": "Assets/models/sphere.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         33.0,
         0.61,
@@ -772,8 +772,8 @@
     },
     {
       "name": "R3_Sphere1",
-      "model": "Assets/models/sphere.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         -21.0,
         0.82,
@@ -799,8 +799,8 @@
     },
     {
       "name": "R3_Armadillo2",
-      "model": "Assets/models/armadillo.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         -15.0,
         0.81,
@@ -826,8 +826,8 @@
     },
     {
       "name": "R3_Cube1",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         -9.0,
         0.75,
@@ -853,8 +853,8 @@
     },
     {
       "name": "R3_Teapot1",
-      "model": "Assets/models/utah_teapot.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         -3.0,
         0.0,
@@ -880,8 +880,8 @@
     },
     {
       "name": "R3_Armadillo1",
-      "model": "Assets/models/armadillo.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         3.0,
         0.81,
@@ -907,8 +907,8 @@
     },
     {
       "name": "R3_Teapot2",
-      "model": "Assets/models/utah_teapot.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         9.0,
         0.0,
@@ -934,8 +934,8 @@
     },
     {
       "name": "R3_Cube2",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         15.0,
         1.0,
@@ -961,8 +961,8 @@
     },
     {
       "name": "R3_Sphere2",
-      "model": "Assets/models/sphere.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         21.0,
         0.51,
@@ -988,8 +988,8 @@
     },
     {
       "name": "R3_Bunny1",
-      "model": "Assets/models/stanford_bunny.gltf",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         27.0,
         1.24,
@@ -1015,8 +1015,8 @@
     },
     {
       "name": "R3_Cube3",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         33.0,
         0.6,
@@ -1042,8 +1042,8 @@
     },
     {
       "name": "R4_Teapot1",
-      "model": "Assets/models/utah_teapot.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         -21.0,
         0.0,
@@ -1069,8 +1069,8 @@
     },
     {
       "name": "R4_Cube1",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         -15.0,
         0.5,
@@ -1096,8 +1096,8 @@
     },
     {
       "name": "R4_Bunny1",
-      "model": "Assets/models/stanford_bunny.gltf",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         -9.0,
         0.93,
@@ -1123,8 +1123,8 @@
     },
     {
       "name": "R4_Cube4",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         -3.0,
         0.75,
@@ -1150,8 +1150,8 @@
     },
     {
       "name": "R4_Sphere1",
-      "model": "Assets/models/sphere.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         3.0,
         1.02,
@@ -1177,8 +1177,8 @@
     },
     {
       "name": "R4_Cube2",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         9.0,
         0.75,
@@ -1204,8 +1204,8 @@
     },
     {
       "name": "R4_Armadillo1",
-      "model": "Assets/models/armadillo.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         15.0,
         0.81,
@@ -1231,8 +1231,8 @@
     },
     {
       "name": "R4_Teapot2",
-      "model": "Assets/models/utah_teapot.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         21.0,
         0.0,
@@ -1258,8 +1258,8 @@
     },
     {
       "name": "R4_Cube3",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         27.0,
         0.6,
@@ -1285,8 +1285,8 @@
     },
     {
       "name": "R4_Sphere2",
-      "model": "Assets/models/sphere.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         33.0,
         0.72,
@@ -1312,8 +1312,8 @@
     },
     {
       "name": "R5_Armadillo1",
-      "model": "Assets/models/armadillo.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         -21.0,
         0.81,
@@ -1339,8 +1339,8 @@
     },
     {
       "name": "R5_Sphere1",
-      "model": "Assets/models/sphere.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         -15.0,
         0.61,
@@ -1366,8 +1366,8 @@
     },
     {
       "name": "R5_Cube1",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         -9.0,
         1.0,
@@ -1393,8 +1393,8 @@
     },
     {
       "name": "R5_Teapot2",
-      "model": "Assets/models/utah_teapot.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         -3.0,
         0.0,
@@ -1420,8 +1420,8 @@
     },
     {
       "name": "R5_Teapot1",
-      "model": "Assets/models/utah_teapot.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         3.0,
         0.0,
@@ -1447,8 +1447,8 @@
     },
     {
       "name": "R5_Bunny1",
-      "model": "Assets/models/stanford_bunny.gltf",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         9.0,
         1.24,
@@ -1474,8 +1474,8 @@
     },
     {
       "name": "R5_Sphere2",
-      "model": "Assets/models/sphere.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         15.0,
         0.82,
@@ -1501,8 +1501,8 @@
     },
     {
       "name": "R5_Cube2",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         21.0,
         0.5,
@@ -1528,8 +1528,8 @@
     },
     {
       "name": "R5_Armadillo2",
-      "model": "Assets/models/armadillo.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         27.0,
         0.65,
@@ -1555,8 +1555,8 @@
     },
     {
       "name": "R5_Cube3",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         33.0,
         0.75,
@@ -1582,8 +1582,8 @@
     },
     {
       "name": "R6_Cube1",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         -21.0,
         0.6,
@@ -1609,8 +1609,8 @@
     },
     {
       "name": "R6_Teapot1",
-      "model": "Assets/models/utah_teapot.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         -15.0,
         0.0,
@@ -1636,8 +1636,8 @@
     },
     {
       "name": "R6_Bunny1",
-      "model": "Assets/models/stanford_bunny.gltf",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         -9.0,
         0.93,
@@ -1663,8 +1663,8 @@
     },
     {
       "name": "R6_Cube2",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         -3.0,
         0.75,
@@ -1690,8 +1690,8 @@
     },
     {
       "name": "R6_Bunny2",
-      "model": "Assets/models/stanford_bunny.gltf",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         3.0,
         1.24,
@@ -1717,8 +1717,8 @@
     },
     {
       "name": "R6_Sphere1",
-      "model": "Assets/models/sphere.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         9.0,
         0.72,
@@ -1744,8 +1744,8 @@
     },
     {
       "name": "R6_Armadillo1",
-      "model": "Assets/models/armadillo.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         15.0,
         0.65,
@@ -1771,8 +1771,8 @@
     },
     {
       "name": "R6_Cube3",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         21.0,
         1.0,
@@ -1798,8 +1798,8 @@
     },
     {
       "name": "R6_Teapot2",
-      "model": "Assets/models/utah_teapot.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         27.0,
         0.0,
@@ -1825,8 +1825,8 @@
     },
     {
       "name": "R6_Teapot3",
-      "model": "Assets/models/utah_teapot.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         33.0,
         0.0,
@@ -1852,8 +1852,8 @@
     },
     {
       "name": "R7_Armadillo2",
-      "model": "Assets/models/armadillo.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         -21.0,
         0.81,
@@ -1879,8 +1879,8 @@
     },
     {
       "name": "R7_Teapot2",
-      "model": "Assets/models/utah_teapot.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         -15.0,
         0.0,
@@ -1906,8 +1906,8 @@
     },
     {
       "name": "R7_Sphere1",
-      "model": "Assets/models/sphere.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         -9.0,
         0.82,
@@ -1933,8 +1933,8 @@
     },
     {
       "name": "R7_Armadillo1",
-      "model": "Assets/models/armadillo.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         -3.0,
         0.81,
@@ -1960,8 +1960,8 @@
     },
     {
       "name": "R7_Cube1",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         3.0,
         0.5,
@@ -1987,8 +1987,8 @@
     },
     {
       "name": "R7_Teapot1",
-      "model": "Assets/models/utah_teapot.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         9.0,
         0.0,
@@ -2014,8 +2014,8 @@
     },
     {
       "name": "R7_Cube2",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         15.0,
         0.75,
@@ -2041,8 +2041,8 @@
     },
     {
       "name": "R7_Sphere2",
-      "model": "Assets/models/sphere.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         21.0,
         0.51,
@@ -2068,8 +2068,8 @@
     },
     {
       "name": "R7_Bunny1",
-      "model": "Assets/models/stanford_bunny.gltf",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         27.0,
         1.24,
@@ -2095,8 +2095,8 @@
     },
     {
       "name": "R7_Cube3",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         33.0,
         0.6,
@@ -2122,8 +2122,8 @@
     },
     {
       "name": "R8_Cube1",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         -21.0,
         0.75,
@@ -2149,8 +2149,8 @@
     },
     {
       "name": "R8_Armadillo1",
-      "model": "Assets/models/armadillo.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/armadillo.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         -15.0,
         0.81,
@@ -2176,8 +2176,8 @@
     },
     {
       "name": "R8_Teapot1",
-      "model": "Assets/models/utah_teapot.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         -9.0,
         0.0,
@@ -2203,8 +2203,8 @@
     },
     {
       "name": "R8_Bunny1",
-      "model": "Assets/models/stanford_bunny.gltf",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         -3.0,
         0.93,
@@ -2230,8 +2230,8 @@
     },
     {
       "name": "R8_Sphere3",
-      "model": "Assets/models/sphere.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         3.0,
         0.82,
@@ -2257,8 +2257,8 @@
     },
     {
       "name": "R8_Sphere1",
-      "model": "Assets/models/sphere.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         9.0,
         1.02,
@@ -2284,8 +2284,8 @@
     },
     {
       "name": "R8_Cube3",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         15.0,
         1.0,
@@ -2311,8 +2311,8 @@
     },
     {
       "name": "R8_Bunny2",
-      "model": "Assets/models/stanford_bunny.gltf",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/stanford_bunny.gltf",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         21.0,
         0.93,
@@ -2338,8 +2338,8 @@
     },
     {
       "name": "R8_Sphere2",
-      "model": "Assets/models/sphere.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         27.0,
         0.61,
@@ -2365,8 +2365,8 @@
     },
     {
       "name": "R8_Teapot2",
-      "model": "Assets/models/utah_teapot.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         33.0,
         0.0,
@@ -2392,8 +2392,8 @@
     },
     {
       "name": "GlassCube1",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         -12.0,
         0.76,
@@ -2420,8 +2420,8 @@
     },
     {
       "name": "GlassSphere1",
-      "model": "Assets/models/sphere.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         18.0,
         0.61,
@@ -2448,8 +2448,8 @@
     },
     {
       "name": "GlassTeapot1",
-      "model": "Assets/models/utah_teapot.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         6.0,
         0.0,
@@ -2476,8 +2476,8 @@
     },
     {
       "name": "AlphaMaskQuad",
-      "model": "Assets/models/alpha_mask_quad.gltf",
-      "texture": "Assets/textures/checkerboard.png",
+      "model": "Scenes/Assets/models/alpha_mask_quad.gltf",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
       "position": [
         6.0,
         3.5,

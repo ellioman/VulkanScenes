@@ -37,8 +37,8 @@
   "objects": [
     {
       "name": "Floor",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/checkerboard.png",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
       "position": [
         0.0,
         -0.5,
@@ -64,8 +64,8 @@
     },
     {
       "name": "SphereNearFloor",
-      "model": "Assets/models/sphere.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         -6.0,
         1.0,
@@ -91,8 +91,8 @@
     },
     {
       "name": "SphereMidHeight",
-      "model": "Assets/models/sphere.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         0.0,
         4.0,
@@ -118,8 +118,8 @@
     },
     {
       "name": "SphereHighAboveFloor",
-      "model": "Assets/models/sphere.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         6.0,
         9.0,

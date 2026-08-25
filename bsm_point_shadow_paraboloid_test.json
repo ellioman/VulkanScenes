@@ -50,8 +50,8 @@
   "objects": [
     {
       "name": "Floor",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/checkerboard.png",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
       "position": [
         0.0,
         -0.5,
@@ -77,8 +77,8 @@
     },
     {
       "name": "Ceiling",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/gray_cement.png",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         0.0,
         6.5,
@@ -104,8 +104,8 @@
     },
     {
       "name": "BackWall",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         0.0,
         3.0,
@@ -131,8 +131,8 @@
     },
     {
       "name": "CeilingOccluder",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         0.0,
         4.0,
@@ -158,8 +158,8 @@
     },
     {
       "name": "WallOccluder",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         0.0,
         2.0,
@@ -185,8 +185,8 @@
     },
     {
       "name": "CenterPillar",
-      "model": "Assets/models/utah_teapot.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         2.5,
         0.0,
@@ -212,8 +212,8 @@
     },
     {
       "name": "SeamOccluder",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         3.0,
         2.0,

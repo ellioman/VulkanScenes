@@ -1,8 +1,17 @@
 # Scenes/
 
-A shareable collection of sample/test scene JSON content. This directory
-contains no compiled code and no build target (`.h`/`.cpp`/`.vcxproj`/
-`.props`) — only scene content and this documentation.
+A shareable collection of sample/test scene JSON content, plus the small
+models/textures those scenes reference (`Assets/models/`,
+`Assets/textures/`). This directory contains no compiled code and no build
+target (`.h`/`.cpp`/`.vcxproj`/`.props`) — only scene content, its assets,
+and this documentation.
+
+Large, not-committable asset bundles (e.g. Sponza's glTF set) are
+deliberately NOT here — they stay project-local (gitignored, fetched
+on-demand via `dev.py fetch-assets`) since committing them would bloat
+every consumer's clone whether or not they touch that scene. Only the
+small (a few MB, no LFS needed), genuinely shareable assets live under
+`Scenes/Assets/`.
 
 Any project that depends on `Renderer/` can load a scene from here by
 pointing `SCENE_PATH` (or an equivalent explicit path) at a `.json` file

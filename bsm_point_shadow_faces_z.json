@@ -50,8 +50,8 @@
   "objects": [
     {
       "name": "WallPlusZ",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/checkerboard.png",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
       "position": [
         0.0,
         2.0,
@@ -77,8 +77,8 @@
     },
     {
       "name": "WallMinusZ",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/checkerboard.png",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
       "position": [
         0.0,
         2.0,
@@ -104,8 +104,8 @@
     },
     {
       "name": "OccluderPlusZ",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         0.0,
         2.6,
@@ -131,8 +131,8 @@
     },
     {
       "name": "OccluderMinusZ",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         0.0,
         1.4,

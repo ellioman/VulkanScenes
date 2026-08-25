@@ -21,7 +21,7 @@
     {
       "name": "SponzaMain",
       "model":   "Assets/External/SceneBible/Sponza/main/NewSponza_Main_glTF_003.gltf",
-      "texture": "Assets/textures/marble.jpg",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [0.0, 0.0, 0.0],
       "rotation": [0.0, 0.0, 0.0],
       "scale":    [1.0, 1.0, 1.0],

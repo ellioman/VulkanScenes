@@ -50,8 +50,8 @@
   "objects": [
     {
       "name": "BackWall",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/marble.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
       "position": [
         0.0,
         2.0,
@@ -77,8 +77,8 @@
     },
     {
       "name": "WallOccluder",
-      "model": "Assets/models/cube.obj",
-      "texture": "Assets/textures/scratch_texture.jpg",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
       "position": [
         0.0,
         2.0,
