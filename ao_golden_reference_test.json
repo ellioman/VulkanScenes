@@ -1,0 +1,98 @@
+{
+  "camera": {
+    "position": [
+      0.0,
+      2.2,
+      3.0
+    ],
+    "target": [
+      0.0,
+      0.3,
+      0.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 45.0,
+    "aspectRatio": 1.7777777777777777,
+    "nearPlane": 0.1,
+    "farPlane": 100.0
+  },
+  "_comment": "algorithm-output-correctness-verification (B.86): dedicated scene for AO's golden-reference occlusion-falloff check. Deliberately minimal (one floor slab + one occluder cube, one non-shadow-casting directional light) so the expected occlusion result -- a dark halo on the floor hugging the cube's base, fading to fully un-occluded (1.0) a few units out -- is simple enough to hand-reason about and visually confirm at bless time. Not reused by any other gate, so it's not in scene-gate-baseline-drift-investigation's (B.57) affected set.",
+  "render": {
+    "aoFormat": "r16f"
+  },
+  "directionalLight": {
+    "direction": [
+      -0.3,
+      -1.0,
+      -0.2
+    ],
+    "intensity": 1.0,
+    "enabled": true,
+    "castShadows": false
+  },
+  "objects": [
+    {
+      "name": "Floor",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [
+        0.0,
+        -0.5,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        20.0,
+        1.0,
+        20.0
+      ],
+      "uvScale": [
+        4.0,
+        4.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "Occluder",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    }
+  ],
+  "debug": {
+    "drawAxisLines": false,
+    "drawGridLines": false,
+    "showLightDebug": false
+  }
+}
