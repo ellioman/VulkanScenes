@@ -1,0 +1,68 @@
+{
+  "camera": {
+    "position": [
+      0.0,
+      3.0,
+      2.0
+    ],
+    "target": [
+      0.0,
+      0.0,
+      -60.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 50.0,
+    "aspectRatio": 1.7777777777777777,
+    "nearPlane": 0.5,
+    "farPlane": 60.0
+  },
+  "_comment": "csm-cascade-selection-verification (B.86b): dedicated scene for CSM's golden-reference cascade-selection check ('csmCascadeIndex' capture). A long receding floor plane under a shallow-angle camera puts view-space depth in [~0.5, ~64] across the frame, spanning CSM's compile-time default 4-cascade PSSM(lambda=0.75) split boundaries for this camera's near=0.5/far=60 (computed via CSMSplitMath::computeCascadeSplitDistance at bless time: cascade0 far ~7.6, cascade1 far ~16.7, cascade2 far ~32.3, cascade3 far=60) -- crossing all three internal boundaries, well past the 'at least two' requirement. This scene relies on CSM's settings staying at their compile-time defaults (numCascades=4, PSSM, lambda=0.75, shadowMaxDistance=0) since no scene-JSON mechanism pins them; a future default change silently invalidates the golden reference (see design.md Risks). Unlike AO's golden scene, the directional light here MUST have castShadows:true -- Scene::getPrimaryDirectionalLight() filters on enabled && castShadows, and CSM's directionalActive gate (which the new capture pass's declaration depends on) is exactly that pointer being non-null. The floor object itself still sets castsShadows:false; it's the receiver under test, not a caster.",
+  "directionalLight": {
+    "direction": [
+      -0.3,
+      -1.0,
+      -0.2
+    ],
+    "intensity": 1.0,
+    "enabled": true,
+    "castShadows": true
+  },
+  "objects": [
+    {
+      "name": "Floor",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [
+        0.0,
+        -0.25,
+        -30.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        20.0,
+        0.5,
+        65.0
+      ],
+      "uvScale": [
+        4.0,
+        16.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    }
+  ],
+  "debug": {
+    "drawAxisLines": false,
+    "drawGridLines": false,
+    "showLightDebug": false
+  }
+}
