@@ -20,7 +20,7 @@
     "nearPlane": 0.1,
     "farPlane": 100.0
   },
-  "_comment": "Deferred OpenPBR (LIGHTING_OPENPBR) verification scene -- openpbr-deferred-support change task 5.1. A separate scene from Scenes/openpbr_material_test.json (B.98's forward-mode scene) so this change's new deferred baselines never touch that scene's existing forward baseline. Select 'OpenPBR' in the Lighting Model panel (or LIGHTING_MODEL=4) on a deferred renderer to see: WaterSphere's non-default specular_ior Fresnel response, CarPaintSphere's coat highlight, GoldSphere's specular_weight lowered below 1 on a fully metallic material, and GlassSphere -- a transparent (isTransparent=true) OpenPBR material whose deferred draw reuses forward's scene_pass.slang outside the merged G-buffer scope (BSM/PCF/CSM only; see dev.py's openpbr-deferred-smoke).",
+  "_comment": "Deferred OpenPBR (LIGHTING_OPENPBR) verification scene -- openpbr-deferred-support change task 5.1. A separate scene from Scenes/openpbr_material_test.json (B.98's forward-mode scene) so this change's new deferred baselines never touch that scene's existing forward baseline. Select 'OpenPBR' in the Lighting Model panel (or LIGHTING_MODEL=3) on a deferred renderer to see: WaterSphere's non-default specular_ior Fresnel response, CarPaintSphere's coat highlight, GoldSphere's specular_weight lowered below 1 on a fully metallic material, and GlassSphere -- a transparent (isTransparent=true) OpenPBR material whose deferred draw reuses forward's scene_pass.slang outside the merged G-buffer scope (BSM/PCF/CSM only; see dev.py's openpbr-deferred-smoke).",
   "directionalLight": {
     "direction": [
       -2.0,

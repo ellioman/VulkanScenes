@@ -20,7 +20,7 @@
     "nearPlane": 0.1,
     "farPlane": 100.0
   },
-  "_comment": "OpenPBR (LIGHTING_OPENPBR) verification scene -- openpbr-material-system change task 4.1. Select 'OpenPBR' in the Lighting Model panel (or LIGHTING_MODEL=4) to see: WaterSphere's non-default specular_ior Fresnel response, CarPaintSphere's coat highlight, GoldSphere's specular_weight lowered below 1 on a fully metallic material (exercises the dielectric-only gating from task 2.2 -- the metal highlight must stay unmodified).",
+  "_comment": "OpenPBR (LIGHTING_OPENPBR) verification scene -- openpbr-material-system change task 4.1. Select 'OpenPBR' in the Lighting Model panel (or LIGHTING_MODEL=3) to see: WaterSphere's non-default specular_ior Fresnel response, CarPaintSphere's coat highlight, GoldSphere's specular_weight lowered below 1 on a fully metallic material (exercises the dielectric-only gating from task 2.2 -- the metal highlight must stay unmodified).",
   "directionalLight": {
     "direction": [
       -2.0,
