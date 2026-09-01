@@ -37,6 +37,15 @@ disabled, since `directionalLight` is a required top-level field) reusing
 verification (`dev.py scene <path>`) with no other light type's
 contribution to confound the result.
 
+`gltf_scene_import_test.json` exercises the `"gltfScene"` scene-JSON block
+(openspec `gltf-2-0-asset-import`): its camera and all three light types
+come from `Assets/models/gltf_scene_import_test.gltf`'s own scene graph, not
+this JSON's `"camera"`/`"directionalLight"` fields, which are present only
+because the schema still requires them and are overridden/supplemented at
+load time. Regenerate the glTF fixture with
+`python dev.py make-gltf-scene-import-test-asset`; regression-covered by
+`python dev.py gltf-scene-import-smoke`.
+
 For the scene-loading library itself (`Scene`, `SceneLoader`, `SceneObject`,
 the JSON schema) see `Renderer/README.md`, which documents the
 library/content boundary. `Renderer/Scene/` provides the loader, types, and

@@ -1,0 +1,29 @@
+{
+  "_comment": "gltf-2-0-asset-import verification scene: camera + directional/point/spot lights all come from the referenced glTF's own scene graph via the 'gltfScene' block, not this JSON. The JSON's own 'camera'/'directionalLight' fields are still required by the schema but are overridden/supplemented at load time -- see Renderer/README.md's gltfScene documentation.",
+  "camera": {
+    "position": [0.0, 0.0, 0.0],
+    "target": [0.0, 0.0, -1.0],
+    "fov": 45.0,
+    "aspectRatio": 1.7777777777777777,
+    "nearPlane": 0.1,
+    "farPlane": 100.0
+  },
+  "directionalLight": {
+    "direction": [0.0, -1.0, 0.0],
+    "intensity": 0.0,
+    "enabled": false
+  },
+  "objects": [
+    {
+      "name": "GltfSceneImportTestQuad",
+      "model": "Scenes/Assets/models/gltf_scene_import_test.gltf",
+      "texture": "Scenes/Assets/textures/white.png",
+      "position": [0.0, 0.0, 0.0]
+    }
+  ],
+  "gltfScene": {
+    "path": "Scenes/Assets/models/gltf_scene_import_test.gltf",
+    "importCamera": true,
+    "importLights": true
+  }
+}
