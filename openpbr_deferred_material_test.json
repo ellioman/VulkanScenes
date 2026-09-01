@@ -1,0 +1,207 @@
+{
+  "camera": {
+    "position": [
+      0.0,
+      2.5,
+      9.0
+    ],
+    "target": [
+      0.0,
+      0.5,
+      0.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 45.0,
+    "aspectRatio": 1.7777777777777777,
+    "nearPlane": 0.1,
+    "farPlane": 100.0
+  },
+  "_comment": "Deferred OpenPBR (LIGHTING_OPENPBR) verification scene -- openpbr-deferred-support change task 5.1. A separate scene from Scenes/openpbr_material_test.json (B.98's forward-mode scene) so this change's new deferred baselines never touch that scene's existing forward baseline. Select 'OpenPBR' in the Lighting Model panel (or LIGHTING_MODEL=4) on a deferred renderer to see: WaterSphere's non-default specular_ior Fresnel response, CarPaintSphere's coat highlight, GoldSphere's specular_weight lowered below 1 on a fully metallic material, and GlassSphere -- a transparent (isTransparent=true) OpenPBR material whose deferred draw reuses forward's scene_pass.slang outside the merged G-buffer scope (BSM/PCF/CSM only; see dev.py's openpbr-deferred-smoke).",
+  "directionalLight": {
+    "direction": [
+      -2.0,
+      -3.0,
+      -6.0
+    ],
+    "intensity": 3.5,
+    "enabled": true,
+    "castShadows": true,
+    "shadow": {
+      "farPlane": 90.0
+    }
+  },
+  "render": {
+    "exposure": 1.8,
+    "materialOverrides": [
+      {
+        "match": "marble",
+        "specularRoughness": 0.15,
+        "baseMetalness": 0.0,
+        "specularIor": 1.33,
+        "specularWeight": 1.0
+      },
+      {
+        "match": "gray_cement",
+        "specularRoughness": 0.4,
+        "baseMetalness": 0.0,
+        "coatWeight": 1.0,
+        "coatRoughness": 0.02,
+        "coatIor": 1.6,
+        "coatColor": [1.0, 1.0, 1.0]
+      },
+      {
+        "match": "scratch_texture",
+        "specularRoughness": 0.25,
+        "baseMetalness": 1.0,
+        "specularWeight": 0.1
+      }
+    ]
+  },
+  "objects": [
+    {
+      "name": "Floor",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [
+        0.0,
+        -0.5,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        40.0,
+        1.0,
+        40.0
+      ],
+      "uvScale": [
+        8.0,
+        8.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "WaterSphere",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        -3.0,
+        0.6,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "CarPaintSphere",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        0.0,
+        0.6,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "GoldSphere",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        3.0,
+        0.6,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "GlassSphere",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        -1.5,
+        1.8,
+        1.5
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": true,
+      "alpha": 0.5
+    }
+  ],
+  "debug": {
+    "drawAxisLines": false,
+    "drawGridLines": false,
+    "showLightDebug": false
+  }
+}
