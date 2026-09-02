@@ -1,5 +1,5 @@
 {
-  "_comment": "remaining-tunable-coverage (B.80) task 4.4 fixture: debug.{drawAxisLines,drawGridLines,showLightDebug} all true. Not a sweep-check entry -- a one-off presence/absence check per task 4.4's own guidance. IMPORTANT: a `dev.py frame-dump-scene` text dump will NOT show a 'Debug.Overlay' pass name even with all three toggles on and rendering correctly -- the render graph subpass-merges Debug.Overlay into the preceding Auto.Skybox.Merged scope, and the FrameDebugger text dump only prints the merge scope's first sub-pass name, silently swallowing the merged-in pass names. This is a frame-dump display limitation, not a rendering bug: the debug draws DO execute inside that merged scope (look for Draw events with vertexCount 6 [axis: 3 line segments] and 804 [grid: 201 lines * 4 verts] appearing under the 'Auto.Skybox.Merged' heading). The real way to prove these toggles work end to end is a screenshot pixel diff against the same scene with all three debug bools false (`SMOKE_SCREENSHOT_PATH` from `dev.py frame-dump-scene`) -- confirmed 2026-09-02: ~757k/2.07M pixels differ between this fixture and an all-off control copy, i.e. the axis/grid/light-debug lines are visibly present.",
+  "_comment": "remaining-tunable-coverage (B.80) follow-up: startup-config-coverage fixture pair isolating debug.showLightDebug specifically (drawAxisLines/drawGridLines held false in both a/b), added after fixing the dead-code gap where StartupConfig::showLightDebug was parsed but never copied to runtimeConfig.drawLightDebug (Application.cpp). Diffs from _b only in debug.showLightDebug.",
   "camera": {
     "position": [
       0.0,
@@ -170,7 +170,11 @@
   "render": {
     "fogNear": 48.0,
     "fogFar": 68.0,
-    "fogColor": [0.0, 0.0, 0.0],
+    "fogColor": [
+      0.0,
+      0.0,
+      0.0
+    ],
     "fogAffectsSky": true
   },
   "extensions": {
@@ -179,8 +183,8 @@
     }
   },
   "debug": {
-    "drawAxisLines": true,
-    "drawGridLines": true,
+    "drawAxisLines": false,
+    "drawGridLines": false,
     "showLightDebug": true
   }
 }
