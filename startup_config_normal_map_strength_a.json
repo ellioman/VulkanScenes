@@ -1,0 +1,124 @@
+﻿{
+  "_comment": "Sponza + curtains test scene. Assets are NOT bundled in git -- run 'dev.py fetch-assets' to download the Intel Sponza glTF + curtains add-on into Assets/External/SceneBible/Sponza/{main,curtains}/. All paths below are project-root-relative, resolved by SceneLoader against the discovered project root regardless of launch directory. The camera + lighting setup is the classic Sponza shot: low cam looking through the atrium with a single directional sun slicing across.",
+  "camera": {
+    "_comment": "Tuned via dev.py iterate-sponza loop against screenshots/reference.avif. 1 unit forward along corridor axis (horizontal yaw 11.3) from the original interactive pose, FOV 65 (vs 50 baseline). Local min of the RMS surface at iter17 (RMS 66.80) within a fwd / lateral / FOV sweep.",
+    "aspectRatio": 1.7777777777777777,
+    "farPlane": 100.0,
+    "fov": 61.0,
+    "nearPlane": 0.1,
+    "position": [
+      -8.5198,
+      1.4611,
+      -1.0683
+    ],
+    "target": [
+      -3.7248,
+      2.3721,
+      0.0207
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "debug": {
+    "drawAxisLines": false,
+    "drawGridLines": false,
+    "showLightDebug": false
+  },
+  "directionalLight": {
+    "_comment": "Sun coming from BEYOND the atrium opening (-X bias so light travels -X), backlighting the corridor. Matches the reference's bright-back / dark-foreground gradient.",
+    "castShadows": true,
+    "color": [
+      1.0,
+      0.95,
+      0.88
+    ],
+    "direction": [
+      0.372,
+      -0.555,
+      0.07
+    ],
+    "intensity": 14.0,
+    "shadow": {
+      "farPlane": 80.0,
+      "nearPlane": 0.1
+    }
+  },
+  "objects": [
+    {
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false,
+      "model": "Assets/External/SceneBible/Sponza/main/NewSponza_Main_glTF_003.gltf",
+      "name": "SponzaMain",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "receivesShadows": true,
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "uvScale": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false,
+      "model": "Assets/External/SceneBible/Sponza/curtains/NewSponza_Curtains_glTF.gltf",
+      "name": "SponzaCurtains",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "receivesShadows": true,
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "uvScale": [
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "extensions": {
+    "_comment": "Opaque per-module config. Each child key matches a registered scene-extension parser (see IRenderer::registerSceneExtensionParser).",
+    "ambientOcclusion": {
+      "enabled": true
+    },
+    "ibl": {
+      "intensity": 0.6
+    }
+  },
+  "render": {
+    "_comment": "Per-scene render overrides applied at startup (SceneLoader.cpp -> Application.cpp). Each field has a sentinel meaning 'no override'; omit it to inherit RuntimeConfig / algorithm defaults.",
+    "_comment2": "remaining-tunable-coverage (B.80) sweep-check fixture: startup-config-coverage's render.normalMapStrength entry. sponza.json's own materialOverrides all set an explicit per-material normalMapStrength, which would mask the global field entirely (MaterialOverrideMatching.h: a per-material override always wins), so this fixture drops materialOverrides to let the global field reach every material.",
+    "normalMapStrength": 1.0,
+    "pcfFilterRadius": 2.0,
+    "pcfKernelSize": 5
+  },
+  "spotLights": []
+}

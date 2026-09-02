@@ -1,0 +1,186 @@
+{
+  "_comment": "remaining-tunable-coverage (B.80) sweep-check fixture: startup-config-coverage's render.fogFar entry. Derived from spinning_fan_demo.json with render.fogFar=68.0 (variant _a) vs 20.0 (variant _b, see sibling file) -- every other field is identical between the two files.",
+  "camera": {
+    "position": [
+      0.0,
+      13.0,
+      20.0
+    ],
+    "target": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 50.0,
+    "aspectRatio": 1.7777777777777777,
+    "nearPlane": 0.1,
+    "farPlane": 100.0
+  },
+  "directionalLight": {
+    "direction": [
+      -0.25,
+      -1.0,
+      -0.15
+    ],
+    "color": [
+      1.0,
+      0.95,
+      0.85
+    ],
+    "intensity": 0.08,
+    "enabled": false,
+    "castShadows": false,
+    "shadow": {
+      "farPlane": 40.0
+    }
+  },
+  "spotLights": [
+    {
+      "position": [
+        0.0,
+        14.0,
+        0.0
+      ],
+      "direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.95,
+        0.85
+      ],
+      "intensity": 18.0,
+      "enabled": true,
+      "castShadows": true,
+      "innerConeAngle": 20.0,
+      "outerConeAngle": 34.0,
+      "range": 30.0
+    }
+  ],
+  "pointLights": [
+    {
+      "position": [
+        0.0,
+        7.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.95,
+        0.85
+      ],
+      "intensity": 9.0,
+      "enabled": false,
+      "castShadows": true,
+      "range": 20.0
+    }
+  ],
+  "objects": [
+    {
+      "name": "Floor",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [
+        0.0,
+        -0.5,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        50.0,
+        1.0,
+        50.0
+      ],
+      "uvScale": [
+        16.0,
+        16.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "FanBladeA",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        0.0,
+        5.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        8.0,
+        0.3,
+        0.6
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": false,
+      "isTransparent": false,
+      "spinSpeed": 90.0
+    },
+    {
+      "name": "FanBladeB",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        0.0,
+        5.05,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "scale": [
+        8.0,
+        0.3,
+        0.6
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": false,
+      "isTransparent": false,
+      "spinSpeed": 90.0
+    }
+  ],
+  "render": {
+    "fogNear": 48.0,
+    "fogFar": 68.0,
+    "fogColor": [0.0, 0.0, 0.0],
+    "fogAffectsSky": true
+  },
+  "extensions": {
+    "ibl": {
+      "intensity": 0.0
+    }
+  },
+  "debug": {
+    "drawAxisLines": false,
+    "drawGridLines": false,
+    "showLightDebug": false
+  }
+}

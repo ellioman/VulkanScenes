@@ -1,0 +1,223 @@
+{
+  "_comment": "remaining-tunable-coverage (B.80) sweep-check fixture: light-config-coverage's point.shadow.farPlane entry. Derived from bsm_point_shadow_test.json with pointLights[0].shadow.farPlane=12.0 (variant _a) vs 3.0 (variant _b, see sibling file) -- every other field is identical between the two files. farPlane=3.0 clips out the farther casters (Ceiling/BackWall/CenterPillar/CeilingOccluder, 3.75-4.5 units away) while keeping the closer ones (Floor/WallOccluder, ~2-2.5 units), forcing a decisively different shadow map without leaving any cube face fully empty.",
+  "camera": {
+    "position": [
+      7.0,
+      5.0,
+      7.0
+    ],
+    "target": [
+      0.0,
+      2.5,
+      -1.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 55.0,
+    "aspectRatio": 1.7777777777777777,
+    "nearPlane": 0.1,
+    "farPlane": 100.0
+  },
+  "directionalLight": {
+    "direction": [
+      -0.3,
+      -1.0,
+      -0.2
+    ],
+    "intensity": 0.15,
+    "castShadows": false
+  },
+  "pointLights": [
+    {
+      "position": [
+        0.0,
+        2.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.95,
+        0.85
+      ],
+      "intensity": 6.0,
+      "range": 9.0,
+      "enabled": true,
+      "castShadows": true,
+      "shadow": {
+        "farPlane": 12.0
+      }
+    }
+  ],
+  "objects": [
+    {
+      "name": "Floor",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [
+        0.0,
+        -0.5,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        14.0,
+        1.0,
+        14.0
+      ],
+      "uvScale": [
+        7.0,
+        7.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "Ceiling",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        0.0,
+        6.5,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        14.0,
+        1.0,
+        14.0
+      ],
+      "uvScale": [
+        7.0,
+        7.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "BackWall",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        0.0,
+        3.0,
+        -4.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        14.0,
+        7.0,
+        1.0
+      ],
+      "uvScale": [
+        7.0,
+        3.5
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "CeilingOccluder",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        0.0,
+        4.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "WallOccluder",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        0.0,
+        2.0,
+        -2.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "CenterPillar",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "rotation": [
+        0.0,
+        0.4,
+        0.0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    }
+  ],
+  "debug": {
+    "drawAxisLines": false,
+    "drawGridLines": false,
+    "showLightDebug": false
+  }
+}
