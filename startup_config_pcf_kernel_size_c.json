@@ -1,0 +1,185 @@
+{
+  "_comment": "dithered-shadow-test-sampling task 5.5: reachability/regression baseline for PCF_KERNEL_SIZE == 1, unreachable through the runtime UI (combo box only offers 2/3/5/7) or any other smoke gate. Copy of startup_config_pcf_kernel_size_a.json with render.pcfKernelSize=1 and FanBladeA/FanBladeB's spinSpeed removed (this fixture's blades are static -- _a's wall-clock-driven spin would be a flaky, non-reproducible baseline since smoke_run_one pins no SMOKE_OBJECT_SPIN, and motion is irrelevant to a kernel-1 reachability check; the actual motion/dithering visual check uses _a directly, see task 5.6). Spot light widened (innerConeAngle 20->40, outerConeAngle 34->75, range 30->60, intensity 18->30) relative to _a: _a's narrow spotlight-in-a-void framing leaves 4 of smoke_hash_status's 5 fixed-UV canary samples (bottom-right/bottom-center/top/mid-left) landing outside the lit disc, tripping its DEAD_CANARIES heuristic on an otherwise-correct render -- discovered running this gate for the first time. Widening the cone lights enough of the floor plane to clear the canary check while keeping the same rig/objects/kernel size. Camera position.x also nudged 0->6.0: the unmodified camera looks straight down the fan's own axis, landing the crossed-blade shadow exactly on the center canary (0.5,0.5) -- a second legitimate but coincidental black sample alongside the sky-void top canary, still tripping the >=2-dead-canaries heuristic. Shifting the camera sideways keeps the same fan/floor/light rig in frame while moving the shadow cross off the exact center pixel.",
+  "camera": {
+    "position": [
+      6.0,
+      13.0,
+      20.0
+    ],
+    "target": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 50.0,
+    "aspectRatio": 1.7777777777777777,
+    "nearPlane": 0.1,
+    "farPlane": 100.0
+  },
+  "directionalLight": {
+    "direction": [
+      -0.25,
+      -1.0,
+      -0.15
+    ],
+    "color": [
+      1.0,
+      0.95,
+      0.85
+    ],
+    "intensity": 0.08,
+    "enabled": false,
+    "castShadows": false,
+    "shadow": {
+      "farPlane": 40.0
+    }
+  },
+  "spotLights": [
+    {
+      "position": [
+        0.0,
+        14.0,
+        0.0
+      ],
+      "direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.95,
+        0.85
+      ],
+      "intensity": 30.0,
+      "enabled": true,
+      "castShadows": true,
+      "innerConeAngle": 40.0,
+      "outerConeAngle": 75.0,
+      "range": 60.0
+    }
+  ],
+  "pointLights": [
+    {
+      "position": [
+        0.0,
+        7.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.95,
+        0.85
+      ],
+      "intensity": 9.0,
+      "enabled": false,
+      "castShadows": true,
+      "range": 20.0
+    }
+  ],
+  "objects": [
+    {
+      "name": "Floor",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [
+        0.0,
+        -0.5,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        50.0,
+        1.0,
+        50.0
+      ],
+      "uvScale": [
+        16.0,
+        16.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "FanBladeA",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        0.0,
+        5.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        8.0,
+        0.3,
+        0.6
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": false,
+      "isTransparent": false
+    },
+    {
+      "name": "FanBladeB",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        0.0,
+        5.05,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "scale": [
+        8.0,
+        0.3,
+        0.6
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": false,
+      "isTransparent": false
+    }
+  ],
+  "render": {
+    "fogNear": 48.0,
+    "fogFar": 68.0,
+    "fogColor": [0.0, 0.0, 0.0],
+    "fogAffectsSky": true,
+    "pcfKernelSize": 1
+  },
+  "extensions": {
+    "ibl": {
+      "intensity": 0.0
+    }
+  },
+  "debug": {
+    "drawAxisLines": false,
+    "drawGridLines": false,
+    "showLightDebug": false
+  }
+}
