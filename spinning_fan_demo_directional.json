@@ -1,5 +1,5 @@
 {
-  "_comment": "Directional-light variant of spinning_fan_demo.json for openspec change shadow-boundary-motion-vectors (tasks.md 0.4) -- the prototype only covers directional-light shadow boundaries, and the base scene's default active light is a spot. Same room/camera/fan as the base scene; directionalLight enabled+castShadows here instead, spot disabled.",
+  "_comment": "Directional-light variant of spinning_fan_demo.json for openspec change shadow-boundary-motion-vectors (tasks.md 0.4) -- the prototype only covers directional-light shadow boundaries, and the base scene's default active light is a spot. Same room/camera/fan as the base scene, including its FanHub empty-parent hierarchy (see spinning_fan_demo.json's own comment); directionalLight enabled+castShadows here instead, spot disabled.",
   "camera": {
     "position": [
       0.0,
@@ -111,12 +111,31 @@
       "isTransparent": false
     },
     {
+      "name": "FanHub",
+      "position": [
+        0.0,
+        5.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spinSpeed": 90.0
+    },
+    {
       "name": "FanBladeA",
       "model": "Scenes/Assets/models/cube.obj",
       "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         0.0,
-        5.0,
+        0.0,
         0.0
       ],
       "rotation": [
@@ -136,7 +155,7 @@
       "castsShadows": true,
       "isStatic": false,
       "isTransparent": false,
-      "spinSpeed": 90.0
+      "parentName": "FanHub"
     },
     {
       "name": "FanBladeB",
@@ -144,7 +163,7 @@
       "texture": "Scenes/Assets/textures/gray_cement.png",
       "position": [
         0.0,
-        5.05,
+        0.05,
         0.0
       ],
       "rotation": [
@@ -164,7 +183,7 @@
       "castsShadows": true,
       "isStatic": false,
       "isTransparent": false,
-      "spinSpeed": 90.0
+      "parentName": "FanHub"
     }
   ],
   "render": {
