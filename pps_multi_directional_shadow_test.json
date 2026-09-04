@@ -1,0 +1,116 @@
+{
+  "camera": {
+    "position": [
+      9.0,
+      6.0,
+      9.0
+    ],
+    "target": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 55.0,
+    "aspectRatio": 1.7777777777777777,
+    "nearPlane": 0.1,
+    "farPlane": 100.0
+  },
+  "directionalLights": [
+    {
+      "direction": [
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.2,
+        0.1
+      ],
+      "intensity": 1.2,
+      "enabled": true,
+      "castShadows": true
+    },
+    {
+      "direction": [
+        0.3,
+        -1.0,
+        -1.0
+      ],
+      "color": [
+        0.1,
+        0.4,
+        1.0
+      ],
+      "intensity": 1.2,
+      "enabled": true,
+      "castShadows": true
+    }
+  ],
+  "objects": [
+    {
+      "name": "Floor",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [
+        0.0,
+        -0.5,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        16.0,
+        1.0,
+        16.0
+      ],
+      "uvScale": [
+        8.0,
+        8.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "CenterTeapot",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.4,
+        0.0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    }
+  ],
+  "debug": {
+    "drawAxisLines": false,
+    "drawGridLines": false,
+    "showLightDebug": false
+  }
+}
