@@ -1,0 +1,121 @@
+{
+  "camera": {
+    "position": [10.0, 8.0, 10.0],
+    "target": [0.0, 1.5, 0.0],
+    "up": [0.0, 1.0, 0.0],
+    "fov": 55.0,
+    "aspectRatio": 1.7777777777777777,
+    "nearPlane": 0.1,
+    "farPlane": 100.0
+  },
+  "directionalLight": {
+    "direction": [-0.2, -1.0, -0.3],
+    "intensity": 0.35,
+    "castShadows": true
+  },
+  "pointLights": [
+    {
+      "position": [-3.0, 2.0, 0.0],
+      "color": [1.0, 0.85, 0.6],
+      "intensity": 6.0,
+      "range": 6.0,
+      "enabled": true,
+      "castShadows": true
+    },
+    {
+      "position": [3.0, 2.0, 0.0],
+      "color": [0.6, 0.85, 1.0],
+      "intensity": 6.0,
+      "range": 6.0,
+      "enabled": true,
+      "castShadows": true
+    },
+    {
+      "position": [0.0, 2.0, 4.0],
+      "color": [0.8, 1.0, 0.8],
+      "intensity": 4.0,
+      "range": 5.0,
+      "enabled": true,
+      "castShadows": false
+    }
+  ],
+  "objects": [
+    {
+      "name": "Floor",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [0.0, -0.5, 0.0],
+      "rotation": [0.0, 0.0, 0.0],
+      "scale": [20.0, 1.0, 20.0],
+      "uvScale": [10.0, 10.0],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "PointOccluderLeft",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [-3.0, 1.0, -1.0],
+      "rotation": [0.0, 0.0, 0.0],
+      "scale": [1.0, 1.0, 1.0],
+      "uvScale": [1.0, 1.0],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "PointReceiverLeft",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [-3.0, 1.0, -3.5],
+      "rotation": [0.0, 0.0, 0.0],
+      "scale": [3.0, 3.0, 0.4],
+      "uvScale": [2.0, 2.0],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "PointOccluderRight",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [3.0, 1.0, -1.0],
+      "rotation": [0.0, 0.0, 0.0],
+      "scale": [1.0, 1.0, 1.0],
+      "uvScale": [1.0, 1.0],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "PointReceiverRight",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [3.0, 1.0, -3.5],
+      "rotation": [0.0, 0.0, 0.0],
+      "scale": [3.0, 3.0, 0.4],
+      "uvScale": [2.0, 2.0],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "NonShadowCastingPointOccluder",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [0.0, 1.0, 3.0],
+      "rotation": [0.0, 0.0, 0.0],
+      "scale": [1.0, 1.0, 1.0],
+      "uvScale": [1.0, 1.0],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    }
+  ],
+  "debug": {
+    "drawAxisLines": false,
+    "drawGridLines": false,
+    "showLightDebug": false
+  }
+}
