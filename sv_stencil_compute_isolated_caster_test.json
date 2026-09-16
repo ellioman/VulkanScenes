@@ -1,0 +1,98 @@
+{
+  "camera": {
+    "position": [
+      10.0,
+      6.0,
+      10.0
+    ],
+    "target": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 45.0,
+    "aspectRatio": 1.7777777777777777,
+    "nearPlane": 0.1,
+    "farPlane": 100.0
+  },
+  "_comment": "sv-compute-stencil-fill task 5.1: single isolated caster, no self-overlap and no cross-object overlap, for a byte-identical-at-the-caster's-own-lit-surface pixel-diff between STENCIL_COMPUTE and STENCIL_ZFAIL. Only two objects total: a non-casting floor receiver and one caster far enough from the floor edges and camera frustum boundary that its shadow never touches anything but the floor.",
+  "directionalLight": {
+    "direction": [
+      -0.3,
+      -1.0,
+      -0.2
+    ],
+    "intensity": 1.2,
+    "enabled": true,
+    "castShadows": true,
+    "shadow": {
+      "farPlane": 50.0
+    }
+  },
+  "objects": [
+    {
+      "name": "Floor",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [
+        0.0,
+        -0.5,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        30.0,
+        1.0,
+        30.0
+      ],
+      "uvScale": [
+        6.0,
+        6.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "IsolatedCasterSphere",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        0.0,
+        1.5,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    }
+  ],
+  "debug": {
+    "drawAxisLines": false,
+    "drawGridLines": false,
+    "showLightDebug": false
+  }
+}
