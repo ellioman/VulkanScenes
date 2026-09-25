@@ -1,5 +1,5 @@
 {
-  "_comment": "remaining-tunable-coverage (B.80) sweep-check fixture: light-config-coverage's point.shadow.farPlane entry. Derived from bsm_point_shadow_test.json with pointLights[0].shadow.farPlane=12.0 (variant _a) vs 3.0 (variant _b, see sibling file) -- every other field is identical between the two files. farPlane=3.0 clips out the farther casters (Ceiling/BackWall/CenterPillar/CeilingOccluder, 3.75-4.5 units away) while keeping the closer ones (Floor/WallOccluder, ~2-2.5 units), forcing a decisively different shadow map without leaving any cube face fully empty.",
+  "_comment": "remaining-tunable-coverage (B.80) sweep-check fixture: light-config-coverage's point.shadow.farPlane entry. Derived from bsm_point_shadow_test.json with pointLights[0].shadow.farPlane=12.0 (variant _a) vs 2.2 (variant _b, see sibling file) -- every other field is identical between the two files. This variant's 12.0 is above the light's range (9.0), so it clips nothing and renders identically to the base scene; the sibling's 2.2 is what makes the pair differ. See the sibling file's comment for how that value was chosen (cube faces clip on per-face axis depth, not radial distance) -- B.272 corrected it from 3.0, which clipped only 3 texels out of 6.3M and left this entry passing on noise.",
   "camera": {
     "position": [
       7.0,

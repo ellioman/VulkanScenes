@@ -1,5 +1,5 @@
 {
-  "_comment": "remaining-tunable-coverage (B.80) sweep-check fixture: light-config-coverage's point.shadow.farPlane entry. Derived from bsm_point_shadow_test.json with pointLights[0].shadow.farPlane=12.0 (variant _a, see sibling file) vs 3.0 (this file, variant _b) -- every other field is identical between the two files. farPlane=3.0 clips out the farther casters (Ceiling/BackWall/CenterPillar/CeilingOccluder, 3.75-4.5 units away) while keeping the closer ones (Floor/WallOccluder, ~2-2.5 units), forcing a decisively different shadow map without leaving any cube face fully empty.",
+  "_comment": "remaining-tunable-coverage (B.80) sweep-check fixture: light-config-coverage's point.shadow.farPlane entry. Derived from bsm_point_shadow_test.json with pointLights[0].shadow.farPlane=12.0 (variant _a, see sibling file) vs 2.2 (this file, variant _b) -- every other field is identical between the two files. B.272 (2026-09-25) corrected this value from 3.0, which clipped nothing: cube-face shadow rendering uses a 90-degree vm::perspective per face (PointShadowCubeFaces::buildFaceViewProjections), so the far plane clips on view-space depth ALONG THAT FACE'S AXIS, not on radial distance from the light. Pick this value against axis depth. Light is at (0,2,0); the three actual casters are CeilingOccluder (axis depth 2.0), WallOccluder (2.0) and CenterPillar (2.5, despite being 3.775 units away radially). 2.2 therefore cuts between CenterPillar and the other two; 3.0 sat above all three and clipped only 3 texels out of 6.3M. Note Ceiling/BackWall/Floor are castsShadows:false and never reach the shadow map at all, so no far plane can clip them -- the earlier version of this comment named them as the casters being clipped.",
   "camera": {
     "position": [
       7.0,
@@ -47,7 +47,7 @@
       "enabled": true,
       "castShadows": true,
       "shadow": {
-        "farPlane": 3.0
+        "farPlane": 2.2
       }
     }
   ],
