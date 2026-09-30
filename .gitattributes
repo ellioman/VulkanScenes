@@ -1,0 +1,9 @@
+# Endings are the repo's, not each machine's core.autocrlf (B.386).
+* text=auto eol=lf
+
+*.bin binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ktx2 binary
+*.glb binary
