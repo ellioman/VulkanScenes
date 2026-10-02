@@ -9,7 +9,9 @@ and this documentation.
 Large, not-committable asset bundles (e.g. Sponza's glTF set) are
 deliberately NOT here — they stay project-local (gitignored, fetched
 on-demand via `dev.py fetch-assets`) since committing them would bloat
-every consumer's clone whether or not they touch that scene. Only the
+every consumer's clone whether or not they touch that scene. fetch-assets
+then bakes each fetched glTF's textures to `.ktx2` siblings (incremental;
+needs KTX-Software, without it the source images load uncompressed). Only the
 small (a few MB, no LFS needed), genuinely shareable assets live under
 `Scenes/Assets/`.
 
