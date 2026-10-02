@@ -2500,6 +2500,33 @@
       "castsShadows": true,
       "isStatic": true,
       "isTransparent": false
+    },
+    {
+      "name": "AlphaMaskQuadDynamic",
+      "model": "Scenes/Assets/models/alpha_mask_quad.gltf",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [
+        0.0,
+        1.5,
+        27.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": false,
+      "isTransparent": false
     }
   ],
   "debug": {
