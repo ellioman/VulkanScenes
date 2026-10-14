@@ -1,5 +1,5 @@
 {
-  "_comment": "remaining-tunable-coverage (B.80) sweep-check fixture: startup-config-coverage's render.pcfKernelSize entry (proves the JSON-authored path, not the SMOKE_PCF_KERNEL_SIZE env-var bypass). Derived from spinning_fan_demo.json with render.pcfKernelSize=2 (variant _a) vs 7 (variant _b, see sibling file) -- every other field is identical between the two files.",
+  "_comment": "remaining-tunable-coverage (B.80) sweep-check fixture: startup-config-coverage's render.pcfKernelSize entry (proves the JSON-authored path sets the kernel size, not a launch-time override that bypasses the scene file). Derived from spinning_fan_demo.json with render.pcfKernelSize=2 (variant _a) vs 7 (variant _b, see sibling file) -- every other field is identical between the two files.",
   "camera": {
     "position": [
       0.0,

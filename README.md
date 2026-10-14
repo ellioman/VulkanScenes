@@ -8,9 +8,10 @@ and this documentation.
 
 Large, not-committable asset bundles (e.g. Sponza's glTF set) are
 deliberately NOT here — they stay project-local (gitignored, fetched
-on-demand via `dev.py fetch-assets`) since committing them would bloat
-every consumer's clone whether or not they touch that scene. fetch-assets
-then bakes each fetched glTF's textures to `.ktx2` siblings (incremental;
+on demand by the VulkanBibleTest repository's `fetch-assets` command) since
+committing them would bloat every consumer's clone whether or not they touch
+that scene. fetch-assets then bakes each fetched glTF's textures to `.ktx2`
+siblings (incremental;
 needs KTX-Software, without it the source images load uncompressed). Only the
 small (a few MB, no LFS needed), genuinely shareable assets live under
 `Scenes/Assets/`.
@@ -36,17 +37,16 @@ how a moving shadow looks under each light type. The three `light_test_*`
 scenes each author exactly one light type (the others present but
 disabled, since `directionalLight` is a required top-level field) reusing
 `default.json`'s grid-of-boxes geometry, for scripted per-algorithm
-verification (`dev.py scene <path>`) with no other light type's
-contribution to confound the result.
+verification (the VulkanBibleTest repository loads one per run) with no
+other light type's contribution to confound the result.
 
 `gltf_scene_import_test.json` exercises the `"gltfScene"` scene-JSON block
 (openspec `gltf-2-0-asset-import`): its camera and all three light types
 come from `Assets/models/gltf_scene_import_test.gltf`'s own scene graph, not
 this JSON's `"camera"`/`"directionalLight"` fields, which are present only
 because the schema still requires them and are overridden/supplemented at
-load time. Regenerate the glTF fixture with
-`python dev.py make-gltf-scene-import-test-asset`; regression-covered by
-`python dev.py gltf-scene-import-smoke`.
+load time. The VulkanBibleTest repository regenerates the glTF fixture and
+holds the regression gate that loads this scene.
 
 For the scene-loading library itself (`Scene`, `SceneLoader`, `SceneObject`,
 the JSON schema) see `Renderer/README.md`, which documents the

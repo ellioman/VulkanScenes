@@ -1,5 +1,5 @@
 {
-  "_comment": "remaining-tunable-coverage (B.80) sweep-check fixture: startup-config-coverage's render.pcfFilterRadius entry (proves the JSON-authored path, not the SMOKE_PCF_FILTER_RADIUS env-var bypass). Derived from spinning_fan_demo.json with render.pcfFilterRadius=0.5 (variant _a, see sibling file) vs 3.0 (this file, variant _b) -- every other field is identical between the two files.",
+  "_comment": "remaining-tunable-coverage (B.80) sweep-check fixture: startup-config-coverage's render.pcfFilterRadius entry (proves the JSON-authored path sets the radius, not a launch-time override that bypasses the scene file). Derived from spinning_fan_demo.json with render.pcfFilterRadius=0.5 (variant _a, see sibling file) vs 3.0 (this file, variant _b) -- every other field is identical between the two files.",
   "camera": {
     "position": [
       0.0,
