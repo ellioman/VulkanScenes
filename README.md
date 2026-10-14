@@ -8,7 +8,7 @@ and this documentation.
 
 Large, not-committable asset bundles (e.g. Sponza's glTF set) are
 deliberately NOT here — they stay project-local (gitignored, fetched
-on demand by the VulkanBibleTest repository's `fetch-assets` command) since
+on demand by the VulkanBibleTests repository's `fetch-assets` command) since
 committing them would bloat every consumer's clone whether or not they touch
 that scene. fetch-assets then bakes each fetched glTF's textures to `.ktx2`
 siblings (incremental;
@@ -37,7 +37,7 @@ how a moving shadow looks under each light type. The three `light_test_*`
 scenes each author exactly one light type (the others present but
 disabled, since `directionalLight` is a required top-level field) reusing
 `default.json`'s grid-of-boxes geometry, for scripted per-algorithm
-verification (the VulkanBibleTest repository loads one per run) with no
+verification (the VulkanBibleTests repository loads one per run) with no
 other light type's contribution to confound the result.
 
 `gltf_scene_import_test.json` exercises the `"gltfScene"` scene-JSON block
@@ -45,7 +45,7 @@ other light type's contribution to confound the result.
 come from `Assets/models/gltf_scene_import_test.gltf`'s own scene graph, not
 this JSON's `"camera"`/`"directionalLight"` fields, which are present only
 because the schema still requires them and are overridden/supplemented at
-load time. The VulkanBibleTest repository regenerates the glTF fixture and
+load time. The VulkanBibleTests repository regenerates the glTF fixture and
 holds the regression gate that loads this scene.
 
 For the scene-loading library itself (`Scene`, `SceneLoader`, `SceneObject`,
