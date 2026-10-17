@@ -1,0 +1,119 @@
+{
+  "_comment": "One spot light, one shadow-casting object: an alphaMode=MASK quad lying flat under it, so the compute spot-shadow pass takes shadow_pass_spot_compute_masked.slang for its only caster. Keep it that way: any non-masked caster in the spot's frustum would let the sweep entry bsm_masked_spot_depth_bias_constant_compute pass through the non-masked shader (the Floor does not cast).",
+  "camera": {
+    "position": [
+      6.0,
+      6.0,
+      8.0
+    ],
+    "target": [
+      0.0,
+      2.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 55.0,
+    "aspectRatio": 1.7777777777777777,
+    "nearPlane": 0.1,
+    "farPlane": 100.0
+  },
+  "directionalLight": {
+    "direction": [
+      -0.3,
+      -1.0,
+      -0.2
+    ],
+    "intensity": 0.15,
+    "castShadows": false
+  },
+  "spotLights": [
+    {
+      "position": [
+        0.0,
+        8.0,
+        0.0
+      ],
+      "direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.95,
+        0.85
+      ],
+      "intensity": 20.0,
+      "enabled": true,
+      "castShadows": true,
+      "innerConeAngle": 20.0,
+      "outerConeAngle": 34.0,
+      "range": 20.0
+    }
+  ],
+  "objects": [
+    {
+      "name": "Floor",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [
+        0.0,
+        -0.5,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        14.0,
+        1.0,
+        14.0
+      ],
+      "uvScale": [
+        7.0,
+        7.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "AlphaMaskQuad",
+      "model": "Scenes/Assets/models/alpha_mask_quad.gltf",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [
+        0.0,
+        3.0,
+        0.0
+      ],
+      "rotation": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": false,
+      "isTransparent": false
+    }
+  ],
+  "debug": {
+    "drawAxisLines": false,
+    "drawGridLines": false,
+    "showLightDebug": false
+  }
+}

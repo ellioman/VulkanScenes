@@ -48,6 +48,13 @@ because the schema still requires them and are overridden/supplemented at
 load time. The VulkanBibleTests repository regenerates the glTF fixture and
 holds the regression gate that loads this scene.
 
+`bsm_spot_shadow_masked_test.json` is the one scene that puts an
+`alphaMode: MASK` quad under a shadow-casting spot light and nothing else in
+the spot's frustum, so a compute-mode spot shadow pass takes its masked
+pipeline for every caster. The VulkanBibleTests repository's
+`bsm_masked_spot_depth_bias_constant_compute` sweep entry loads it; add no
+non-masked shadow caster to it.
+
 For the scene-loading library itself (`Scene`, `SceneLoader`, `SceneObject`,
 the JSON schema) see `Renderer/README.md`, which documents the
 library/content boundary. `Renderer/Scene/` provides the loader, types, and
