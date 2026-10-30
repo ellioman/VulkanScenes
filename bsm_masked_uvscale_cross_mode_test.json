@@ -1,0 +1,130 @@
+{
+  "_comment": "regression-cross-diff scene 'masked-uvscale': the only caster is one alphaMode=MASK glTF quad whose material uvScale is [2, 2] through render.materialOverrides (a glTF material ignores the object's own uvScale, which stays 1), lit by a shadow-casting spot AND a shadow-casting directional light, so the compute alpha test of both the spot masked shaders and the tiled directional masked shader must sample at uv * uvScale to match the rasterized shadow maps. Keep the quad the only caster (the Floor does not cast) and keep its uvScale other than 1 and both lights casting.",
+  "camera": {
+    "position": [
+      6.0,
+      6.0,
+      8.0
+    ],
+    "target": [
+      0.0,
+      2.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 55.0,
+    "aspectRatio": 1.7777777777777777,
+    "nearPlane": 0.1,
+    "farPlane": 100.0
+  },
+  "directionalLight": {
+    "direction": [
+      -0.3,
+      -1.0,
+      -0.2
+    ],
+    "intensity": 0.15,
+    "castShadows": true
+  },
+  "spotLights": [
+    {
+      "position": [
+        0.0,
+        8.0,
+        0.0
+      ],
+      "direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.95,
+        0.85
+      ],
+      "intensity": 20.0,
+      "enabled": true,
+      "castShadows": true,
+      "innerConeAngle": 20.0,
+      "outerConeAngle": 34.0,
+      "range": 20.0
+    }
+  ],
+  "objects": [
+    {
+      "name": "Floor",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [
+        0.0,
+        -0.5,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        14.0,
+        1.0,
+        14.0
+      ],
+      "uvScale": [
+        7.0,
+        7.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "AlphaMaskQuad",
+      "model": "Scenes/Assets/models/alpha_mask_quad.gltf",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [
+        0.0,
+        3.0,
+        0.0
+      ],
+      "rotation": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": false,
+      "isTransparent": false
+    }
+  ],
+  "render": {
+    "materialOverrides": [
+      {
+        "match": "alpha_mask_checker",
+        "uvScale": [
+          2.0,
+          2.0
+        ]
+      }
+    ]
+  },
+  "debug": {
+    "drawAxisLines": false,
+    "drawGridLines": false,
+    "showLightDebug": false
+  }
+}
