@@ -1,0 +1,62 @@
+{
+  "camera": {
+    "position": [0.0, 4.0, 3.0],
+    "target": [0.0, 0.0, -8.0],
+    "up": [0.0, 1.0, 0.0],
+    "fov": 50.0,
+    "aspectRatio": 1.7777777777777777,
+    "nearPlane": 0.5,
+    "farPlane": 60.0
+  },
+  "_comment": "B.1150 evidence: a caster inside cascade 0's slice (view depth < ~7.6) but laterally far outside cascade 3's slice (view depth ~32..60). The multiview CSM cull tested only the last cascade, so HEAD drops this caster from the shared draw and cascade 0 loses its shadow. Same camera/floor as csm_cascade_selection_test.json.",
+  "directionalLight": {
+    "direction": [-0.5, -1.0, 0.0],
+    "intensity": 1.0,
+    "enabled": true,
+    "castShadows": true
+  },
+  "objects": [
+    {
+      "name": "Floor",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [0.0, -0.25, -30.0],
+      "rotation": [0.0, 0.0, 0.0],
+      "scale": [20.0, 0.5, 65.0],
+      "uvScale": [4.0, 16.0],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "NearCaster",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [0.0, 2.0, -1.5],
+      "rotation": [0.0, 0.0, 0.0],
+      "scale": [2.0, 2.0, 2.0],
+      "uvScale": [1.0, 1.0],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    }
+    ,
+    {
+      "name": "FarCaster",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [0.0, 2.5, -38.0],
+      "rotation": [0.0, 0.0, 0.0],
+      "scale": [4.0, 4.0, 4.0],
+      "uvScale": [1.0, 1.0],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    }
+  ],
+  "debug": {
+    "drawAxisLines": false,
+    "drawGridLines": false,
+    "showLightDebug": false
+  }
+}
