@@ -11,7 +11,8 @@
   "objects": [
     { "name": "Floor", "model": "Scenes/Assets/models/cube.obj", "texture": "Scenes/Assets/textures/checkerboard.png", "position": [0.0, -0.5, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [50.0, 1.0, 50.0], "uvScale": [16.0, 16.0], "castsShadows": false, "isStatic": true, "isTransparent": false },
     { "name": "FanBladeA", "model": "Scenes/Assets/models/cube.obj", "texture": "Scenes/Assets/textures/gray_cement.png", "position": [0.0, 5.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [8.0, 0.3, 0.6], "uvScale": [1.0, 1.0], "castsShadows": true, "isStatic": false, "isTransparent": false, "spinSpeed": 90.0 },
-    { "name": "FanBladeB", "model": "Scenes/Assets/models/cube.obj", "texture": "Scenes/Assets/textures/gray_cement.png", "position": [0.0, 5.05, 0.0], "rotation": [0.0, 90.0, 0.0], "scale": [8.0, 0.3, 0.6], "uvScale": [1.0, 1.0], "castsShadows": true, "isStatic": false, "isTransparent": false, "spinSpeed": 90.0 }
+    { "name": "FanBladeB", "model": "Scenes/Assets/models/cube.obj", "texture": "Scenes/Assets/textures/gray_cement.png", "position": [0.0, 5.05, 0.0], "rotation": [0.0, 90.0, 0.0], "scale": [8.0, 0.3, 0.6], "uvScale": [1.0, 1.0], "castsShadows": true, "isStatic": false, "isTransparent": false, "spinSpeed": 90.0 },
+    { "name": "GlassBlock", "model": "Scenes/Assets/models/cube.obj", "texture": "Scenes/Assets/textures/marble.jpg", "position": [-1.0, 0.5, -0.6], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "uvScale": [1.0, 1.0], "castsShadows": false, "isStatic": true, "isTransparent": true, "alpha": 0.5 }
   ],
   "render": { "fogNear": 48.0, "fogFar": 68.0, "fogColor": [0.0, 0.0, 0.0], "fogAffectsSky": true },
   "extensions": { "ibl": { "intensity": 0.0 } },
