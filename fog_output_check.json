@@ -1,0 +1,64 @@
+{
+  "camera": {
+    "position": [
+      -28.0,
+      15.0,
+      28.0
+    ],
+    "target": [
+      6.0,
+      0.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 45.0,
+    "aspectRatio": 1.7777777777777777,
+    "nearPlane": 0.1,
+    "farPlane": 100.0
+  },
+  "directionalLight": {
+    "direction": [
+      -16.0,
+      -22.0,
+      -22.0
+    ],
+    "intensity": 0.25,
+    "castShadows": true,
+    "shadow": {
+      "farPlane": 90.0
+    }
+  },
+  "objects": [
+    {
+      "name": "Floor",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [
+        6.0,
+        -0.5,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        250.0,
+        1.0,
+        250.0
+      ],
+      "uvScale": [
+        15.0,
+        15.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    }
+  ]
+}
