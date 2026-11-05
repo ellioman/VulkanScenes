@@ -55,6 +55,13 @@ pipeline for every caster. The VulkanBibleTests repository's
 `bsm_masked_spot_depth_bias_constant_compute` sweep entry loads it; add no
 non-masked shadow caster to it.
 
+`contact_shadow_footprint.json` is one thin slab standing on a floor under a
+shadow-casting directional light, with a close camera. With a coarse shadow
+map and a large depth bias (the VulkanBibleTests
+`smoke-renderer-contact-shadow-injection-check` pins them) the shadow map
+leaves a bright gap at the slab base, so the screen-space contact term has a
+large, visible footprint. Keep it to one slab and one floor.
+
 For the scene-loading library itself (`Scene`, `SceneLoader`, `SceneObject`,
 the JSON schema) see `Renderer/README.md`, which documents the
 library/content boundary. `Renderer/Scene/` provides the loader, types, and
