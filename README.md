@@ -55,6 +55,12 @@ pipeline for every caster. The VulkanBibleTests repository's
 `bsm_masked_spot_depth_bias_constant_compute` sweep entry loads it; add no
 non-masked shadow caster to it.
 
+`light_test_spot_single.json` is one enabled shadow-casting spot light over a
+floor and four static casters, with a disabled directional light. It exists for
+the VulkanBibleTests shadow error table, whose Shadow Mapping spot capture pass
+is declared only for exactly one casting spot (`light_test_spot.json` holds
+eight). Keep it at one spot.
+
 `contact_shadow_footprint.json` is one thin slab standing on a floor under a
 shadow-casting directional light, with a close camera. With a coarse shadow
 map and a large depth bias (the VulkanBibleTests

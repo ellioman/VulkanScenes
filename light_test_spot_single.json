@@ -1,0 +1,204 @@
+{
+  "_comment": "Single-light verification scene for the shadow error table: exactly one enabled shadow-casting spot light and four static casters inside its cone, so a capture of the spot's visibility holds lit, shadowed and penumbra texels. Keep it at one spot: the Shadow Mapping spot capture pass is declared only for exactly one casting spot, and the ray query reference traces the first enabled spot. Directional light present but disabled (SceneLoader requires the field).",
+  "camera": {
+    "position": [
+      -8.0,
+      10.0,
+      14.0
+    ],
+    "target": [
+      6.0,
+      0.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 45.0,
+    "aspectRatio": 1.7777777777777777,
+    "nearPlane": 0.1,
+    "farPlane": 100.0
+  },
+  "directionalLight": {
+    "direction": [
+      -16.0,
+      -22.0,
+      -22.0
+    ],
+    "intensity": 0.25,
+    "enabled": false,
+    "castShadows": true,
+    "shadow": {
+      "farPlane": 90.0
+    }
+  },
+  "spotLights": [
+    {
+      "position": [
+        6.0,
+        12.0,
+        0.0
+      ],
+      "direction": [
+        0.05,
+        -1.0,
+        -0.05
+      ],
+      "color": [
+        1.0,
+        0.95,
+        0.85
+      ],
+      "intensity": 6.0,
+      "enabled": true,
+      "castShadows": true,
+      "innerConeAngle": 22.0,
+      "outerConeAngle": 38.0,
+      "range": 30.0
+    }
+  ],
+  "objects": [
+    {
+      "name": "Floor",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/checkerboard.png",
+      "position": [
+        6.0,
+        -0.5,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        60.0,
+        1.0,
+        60.0
+      ],
+      "uvScale": [
+        6.0,
+        6.0
+      ],
+      "castsShadows": false,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "Cube",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        2.0,
+        0.75,
+        2.0
+      ],
+      "rotation": [
+        0.0,
+        0.3,
+        0.0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "Teapot",
+      "model": "Scenes/Assets/models/utah_teapot.obj",
+      "texture": "Scenes/Assets/textures/marble.jpg",
+      "position": [
+        7.0,
+        0.0,
+        -3.0
+      ],
+      "rotation": [
+        0.0,
+        0.5,
+        0.0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "Sphere",
+      "model": "Scenes/Assets/models/sphere.obj",
+      "texture": "Scenes/Assets/textures/gray_cement.png",
+      "position": [
+        9.5,
+        0.8,
+        2.5
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    },
+    {
+      "name": "TallBox",
+      "model": "Scenes/Assets/models/cube.obj",
+      "texture": "Scenes/Assets/textures/scratch_texture.jpg",
+      "position": [
+        10.0,
+        2.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        4.0,
+        1.0
+      ],
+      "uvScale": [
+        1.0,
+        1.0
+      ],
+      "castsShadows": true,
+      "isStatic": true,
+      "isTransparent": false
+    }
+  ],
+  "debug": {
+    "drawAxisLines": false,
+    "drawGridLines": false,
+    "showLightDebug": false
+  }
+}
